@@ -4,25 +4,16 @@
 	"about": "ODM Agreement metadata schema",
 	"about_url": "http://github.com/open-data/ckanext-scheming",
 	"dataset_fields": [{
-		"field_name": "document_type",
-		"label": "Document type",
-		"preset": "document_type",
-		"required": "true"
-	},{
-		"field_name": "odm_language",
-		"label": "Language of document",
-		"required": "true",
-		"form_placeholder": "Language(s) of the dataset, including resources within dataset.",
-		"preset": "odm_language"
-	}, {
 		"field_name": "title_translated",
 		"preset": "fluent_core_title_translated_single",
+		"validate": "true",
+		"multilingual": "true",
 		"label": {
-			"en": "Formal full title",
-			"th": "Formal full title",
-			"km": "ចំណងជើងជាផ្លូវការពេញលេញ",
-			"vi": "Tiêu đề đầy đủ chính thức",
-			"my": "ခေါင်းစဉ်အပြည့်အစုံ"
+			"en": "Contract Name",
+			"th": "Contract Name",
+			"km": "Contract Name",
+			"vi": "Contract Name",
+			"my": "Contract Nameံ"
 		},
 		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Main title",
@@ -31,6 +22,7 @@
     }
 	}, {
 		"field_name": "title",
+		"required": "true",
 		"label": "title",
 		"preset": "text_hidden",
     "form_attrs": {
@@ -39,56 +31,106 @@
 		"validators": "if_empty_same_as(name)"
 	}, {
 		"field_name": "name",
+		"required": "true",
 		"label": "URL",
 		"preset": "dataset_slug",
 		"form_placeholder": "eg. my-dataset",
     "validators": "if_empty_same_as(title) odm_dataset_if_empty_new_id odm_dataset_urlencode odm_dataset_record_does_not_exist_yet"
 	}, {
-		"field_name": "marc21_246",
-		"label": "Short title (alternative/varying form of title)",
-    "label": {
-			"en": "Short title (alternative/varying form of title)",
-			"th": "Short title (alternative/varying form of title)",
-			"km": "ចំណងជើងខ្លី (ចំណងជើងផ្សេងទៀត)",
-			"vi": "Tên rút gọn (tên thay thế/dạng viết khác)",
-			"my": "ခေါင်းစဉ်အတို (မူရင်းခေါင်းစဉ်နှင့်မတူသောခေါင်းစဉ်)"
+		"field_name": "notes_translated",
+		"preset": "fluent_core_notes_translated_markdown_single",
+		"multilingual": "true",
+		"label": {
+			"en": "Objective",
+			"th": "Objective",
+			"km": "Objective",
+			"vi": "Objective",
+			"my": "Objective"
 		},
 		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_snippet": "text.html",
-		"form_placeholder": "Parallel title or translation."
+		"form_placeholder": "Abstract or summary of book or articlee"
 	}, {
 		"field_name": "taxonomy",
 		"label": "Topics",
 		"preset": "odm_taxonomy",
     "required": "true",
+		"validate": "true",
 		"form_placeholder": "e.g. economy, mental health, government"
 	}, {
-		"field_name": "notes_translated",
-		"preset": "fluent_core_notes_translated_markdown_single",
-		"label": {
-			"en": "Short summary (contents)",
-			"th": "Short summary (contents)",
-			"km": "សេចក្ដីសង្ខេបខ្លី (ខ្លឹមសារ)",
-			"vi": "Tóm tắt nội dung",
-			"my": "အနှစ်ချုပ် (အကြောင်းအရာ)"
-		},
-		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "Abstract or summary of book or articlee"
+		"field_name": "odm_agreement_document_type",
+		"label": "Document type",
+		"preset": "text",
+    "required": "true",
+		"validate": "true",
+		"form_placeholder": "NOTE: Creation of data table pending"
 	}, {
-		"field_name": "odm_spatial_range",
-		"label": "Geographic area (spatial range)",
-		"form_placeholder": "The geographic area that the dataset is relevant to (i.e. Cambodia, Laos).",
-		"preset": "odm_spatial_range",
-		"required": "true"
+		"field_name": "odm_agreement_participating_share",
+		"label": "Participating share",
+		"preset": "text"
 	}, {
-		"field_name": "odm_province",
-		"label": "Province(s)",
-		"form_placeholder": "The province(s) this dataset relates to",
-		"preset": "odm_province"
+		"field_name": "odm_agreement_contracting_parties",
+		"label": "Contracting Parties",
+		"preset": "text",
+    "required": "true",
+		"validate": "true",
+		"form_placeholder": "NOTE: Creation of data table pending"
+	}, {
+		"field_name": "odm_agreement_government_entity",
+		"preset": "odm_agreement_government_entity",
+		"label": "Government Entity (multiple)",
+		"form_placeholder": "The jurisdictional agency responsible for the enforcing and implementing the (law) legal document."
+	}, {
+		"field_name": "odm_agreement_concession_name",
+		"label": "Concession/License name",
+		"preset": "text",
+		"form_placeholder": "The concession or license name, is meant for the name of the license area or block which is covered by the contract."
+	}, {
+		"field_name": "odm_agreement_disclosure_mode",
+		"label": "Disclosure Mode",
+		"preset": "select",
+	  "choices": [
+	    {
+	      "value": "by_government",
+	      "label": "Released by government"
+	    },
+			{
+	      "value": "by_company",
+	      "label": "Released by company"
+	    },
+			{
+	      "value": "by_media",
+	      "label": "Released by media"
+	    },
+			{
+	      "value": "other",
+	      "label": "Other"
+	    }
+		]
+	}, {
+		"field_name": "odm_agreement_document_reference_number",
+		"label": "Document reference no.",
+		"preset": "text",
+		"require": "true",
+		"validate": "true",
+		"form_placeholder": "Unknown default if not listed on the document."
+	}, {
+		"field_name": "odm_agreement_landmatrix_no",
+		"label": "LandMatrix No.",
+		"preset": "number",
+		"form_placeholder": "Look up land matrix number."
+	}, {
+		"field_name": "license_id",
+		"label": "License",
+		"preset": "odm_license",
+		"required": "true",
+		"validate": "true",
+		"help_text": "License definitions and additional information can be found at http://opendefinition.org/"
 	}, {
 		"field_name": "odm_copyright",
 		"label": "Copyright",
 		"preset": "odm_copyright",
+		"required": "true",
+		"validate": "true",
 		"help_text": "Select 'Yes', 'No', 'Unclear copyright' or 'To be determined' about the copyright of the dataset. If copyright of any type is present, describe further in Access and User Constraints."
 	}, {
 		"field_name": "odm_access_and_use_constraints",
@@ -103,15 +145,30 @@
 		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "A few sentences describing legal considerations for people who access the website and/or use its contents."
 	}, {
+		"field_name": "owner_org",
+		"label": "Organization",
+		"preset": "dataset_organization",
+		"required": "true",
+		"validate": "true"
+	}, {
 		"field_name": "version",
 		"label": "Version / Edition",
 		"validators": "scheming_required unicode package_version_validator",
 		"form_placeholder": "Version of publication",
-		"required": "true"
+		"required": "true",
+		"validate": "true"
 	}, {
-		"field_name": "owner_org",
-		"label": "Organization",
-		"preset": "dataset_organization"
+		"field_name": "odm_language",
+		"label": "Language of document",
+		"required": "true",
+		"validate": "true",
+		"form_placeholder": "Language(s) of the dataset, including resources within dataset.",
+		"preset": "odm_language"
+	}, {
+		"field_name": "odm_date_created",
+		"label": "Date created",
+		"form_placeholder": "Date a new version or update of the dataset was created.",
+		"preset": "odm_date_created"
 	}, {
 		"field_name": "odm_date_uploaded",
 		"label": "Date uploaded",
@@ -123,123 +180,193 @@
 		"form_placeholder": "Date a new version or update of the dataset was uploaded.",
 		"preset": "odm_date_modified"
 	}, {
-		"field_name": "license_id",
-		"label": "License",
-		"preset": "odm_license",
-		"help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+		"field_name": "odm_spatial_range",
+		"label": "Geographic area (spatial range)",
+		"form_placeholder": "The geographic area that the dataset is relevant to (i.e. Cambodia, Laos).",
+		"preset": "odm_spatial_range",
+		"required": "true",
+		"validate": "true"
 	}, {
-		"field_name": "odm_contact",
-    "preset": "fluent_markdown_single",
+		"field_name": "odm_province",
+		"label": "Province(s)",
+		"form_placeholder": "The province(s) this dataset relates to",
+		"preset": "odm_province"
+	}, {
+		"field_name": "odm_metadata_reference_information",
+		"preset": "fluent_markdown_single",
 		"label": {
-			"en": "Contact",
-			"th": "ข้อมูลติดต่อ",
-			"km": "ទំនាក់ទំនង",
-			"vi": "Liên hệ",
-			"my": "ဆက်သွယ်ရန်"
+			"en": "Metadata Reference Information",
+			"th": "ข้อมูลอ้างอิงข้อมูลเมตา",
+			"km": "ពត័មានជាអំនះអំនាងនៃព័ត៌មាន​អំពីទិន្នន័យ",
+			"vi": "Thông tin tham khảo Metadata.",
+			"my": "Metadata ကိုရည်ညွှန်းသော သတင်းအချက်အလက်"
 		},
 		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "Contact information for the individual or organization that is responsible for or most knowledgeable about the dataset. This could be the author of a report, the contact information for the relevant department of an organization that produced a report, or the data analyst, mapper or researcher that produced a dataset or report."
+		"form_placeholder": "Information about how up-to-date the metadata is and who is responsible for maintaining it."
 	}, {
-		"field_name": "marc21_100",
-		"label": "Author (individual)",
-		"form_snippet": "text.html",
-		"form_placeholder": "Main Entry-Personal Name (author)."
+		"field_name": "odm_agreement_amendment_to_contract",
+		"label": "Amendment to contract",
+		"preset": "odm_related_agreements"
 	}, {
-		"field_name": "marc21_110",
-		"label": "Author (corporate)",
-		"form_snippet": "text.html",
-		"form_placeholder": "Main Entry-Corporate Name (corporate author) or title of journal."
+		"field_name": "odm_agreement_signature_date",
+		"label": "Signature date",
+		"form_placeholder": "Date a new version or update of the dataset was uploaded.",
+		"preset": "odm_date_modified"
 	}, {
-		"field_name": "marc21_700",
-		"label": "Co-author (individual)",
-		"form_snippet": "text.html",
-		"form_placeholder": "Personal Name (co-author), more than one author. "
-	}, {
-		"field_name": "marc21_710",
-		"label": "Co-author (coorporate)",
-		"form_snippet": "text.html",
-		"form_placeholder": "Corporate Name, more than one Corporate. "
-	}, {
-		"field_name": "marc21_020",
-		"label": "ISBN number",
-		"form_snippet": "text.html",
-		"form_placeholder": "13-digit unique number that uniquely identify a commercial book"
-	}, {
-		"field_name": "marc21_022",
-		"label": "ISSN number",
-    "form_snippet": "text.html",
-		"form_placeholder": "8-digit number that uniquely identify a serial publication"
-	}, {
-		"field_name": "marc21_260a",
-    "preset": "fluent_text_single",
-    "label": {
-			"en": "Publication place",
-			"th": "Publication place",
-			"km": "កន្លែងបោះពុម្ភផ្សាយ",
-			"vi": "Nơi xuất bản",
-			"my": "ထုတ်ဝေသည့်ရေရာ "
-		},
-		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "Place of publisher"
-	}, {
-		"field_name": "marc21_260b",
-    "preset": "fluent_text_single",
-    "label": {
-			"en": "Publisher",
-			"th": "ผู้พิมพ์",
-			"km": "អ្នកបោះពុម្ពផ្សាយ",
-			"vi": "Nhà xuất bản",
-			"my": "ထုတ်ဝေသူ"
-		},
-		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "Name of publishing organization"
-	}, {
-		"field_name": "marc21_260c",
-		"label": "Publication date",
-		"form_placeholder": "Date published (YYYY)",
-    "preset": "number"
-	}, {
-		"field_name": "marc21_300",
-    "preset": "fluent_text_single",
+		"field_name": "odm_agreement_short_notes_of_change",
+		"preset": "fluent_markdown_single",
 		"label": {
-			"en": "Pagination",
-			"th": "การให้เลขหน้า",
-			"km": "ការបង់លេខ",
-			"vi": "Đánh số trang",
-			"my": "စာမျက်နှာခွဲ"
+			"en": "Short notes of change",
+			"th": "Short notes of change",
+			"km": "Short notes of change",
+			"vi": "Short notes of change",
+			"my": "Short notes of change"
 		},
 		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "Physical description (pagination)"
+		"form_placeholder": "Only if the document is an amendent or annex"
 	}, {
-		"field_name": "marc21_500",
-    "preset": "fluent_markdown_single",
+		"field_name": "odm_agreement_source",
+		"label": "Links to source",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Official URLs where the document is made available."
+	}, {
+		"field_name": "odm_agreement_notes",
+		"preset": "fluent_markdown_single",
 		"label": {
-			"en": "General note",
-			"th": "หมายเหตุทั่วไป",
-			"km": "កំណត់សំគាល់ទូទៅង",
-			"vi": "Chú ý",
-			"my": "အထွေထွေ မှတ်ချက်"
+			"en": "Notes",
+			"th": "Notes",
+			"km": "Notes",
+			"vi": "Notes",
+			"my": "Notes"
 		},
 		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "General note."
+		"form_placeholder": ""
 	}, {
-		"field_name": "odm_reference_document",
-		"label": "Legacy reference document",
-		"form_placeholder": "e.g Tong_Min_Group_Engineering__21.06.2011.pdf"
+		"field_name": "odm_agreement_granted_area",
+		"label": "Granted area",
+		"preset": "number",
+		"form_placeholder": "in hectares"
+	}, {
+		"field_name": "odm_agreement_contract_term",
+		"label": "Contract term",
+		"preset": "number",
+		"form_placeholder": ""
+	}, {
+		"field_name": "odm_agreement_payment_for_concession_fees",
+		"label": "Payment for concession fees",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Comma separated values with following format: Year 1, $5\nYear 2, $7\nYear 3, $9"
+	}, {
+		"field_name": "odm_agreement_guaranty_deposit_for_contract_implementation",
+		"label": "Guaranty deposit for contract implementation",
+		"preset": "number",
+		"form_placeholder": "in USD"
+	}, {
+		"field_name": "odm_agreement_land_use_planning",
+		"label": "Land use planning",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Comma separated values with following format: Year 1, 1000\nYear 2, 2000\nYear 3, 3000"
+	}, {
+		"field_name": "odm_agreement_parties_obligations",
+		"label": "Party's obligation in the implementation of the project",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Short summary of the general obligations for the private company"
+	}, {
+		"field_name": "odm_agreement_job_creation_summary",
+		"label": "Job creation summary",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Obligations of the private company in recruiting local people for work, instead of foreigners."
+	}, {
+		"field_name": "odm_agreement_job_creation_number",
+		"label": "Number of created jobs",
+		"preset": "number",
+		"form_placeholder": "Figures can be mentioned occasionally"
+	}, {
+		"field_name": "odm_agreement_training_summary",
+		"label": "Training summary",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Obligations of the private company in recruting local people for work, instead of foreigners. If there is no technical staff from the local people, they shall be guided by foreigner technical staff; or financial resource allocation shall be planed and iimplemented."
+	}, {
+		"field_name": "odm_agreement_training_number",
+		"label": "Fund allocation for training",
+		"preset": "number",
+		"form_placeholder": "in USD/year"
+	}, {
+		"field_name": "odm_agreement_environmental_protection",
+		"label": "Environmental protection",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "The private company has obligations to mitigate the environmental impact of its project implementation to the maximum. Any logging activities are banned. Recommendations from the relevant authorities shall be condisered thoughtly."
+	}, {
+		"field_name": "odm_agreement_sociocultural_protection",
+		"label": "Socio-cultural protection",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Obligations of the private companies in the relocation and restoration of the people livelihood, and no harmful activities to the people's livelihood and culture. Eg, the company is taking care on the livehood of the workers and their familities: residence, hopital, schools (ELCs). The compay shall not make any harms to the heritage sites, and spiritual areas (mining)."
+	}, {
+		"field_name": "odm_agreement_fiscal_duties_summary",
+		"label": "Fiscal duties summary",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "The private company has obligations to pay tax to the state. In general, there is no figure."
+	}, {
+		"field_name": "odm_agreement_fiscal_duties_number",
+		"label": "Total amount of fiscal duties",
+		"preset": "number",
+		"form_placeholder": "in USD"
+	}, {
+		"field_name": "odm_agreement_eia",
+		"label": "Environmental impact assessment (EIA)",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "The private company has obligations to pay tax to the state. In general, there is no figure."
+	}, {
+		"field_name": "odm_agreement_social_fund",
+		"label": "Total amount of fiscal duties",
+		"preset": "number",
+		"form_placeholder": "in USD"
+	}, {
+		"field_name": "odm_agreement_environmental_fund_summary",
+		"label": "Environmental fund summary",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Activities of the area and nature/environment preservation and restoration, and how funding is managed and spent."
+	}, {
+		"field_name": "odm_agreement_environmental_funds",
+		"label": "Total amount of environmental funds",
+		"preset": "number",
+		"form_placeholder": "in USD"
+	}, {
+		"field_name": "odm_agreement_suspension_revocation_termination",
+		"label": "Suspension and/or revocation or termination",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Suspension and/or revocation of the mining licenses when certain conditions are met. Termination of the contract (ELCs) may take place on a part of or the entire project upon the agreement of the party or the sole previledge of the state."
+	}, {
+		"field_name": "odm_agreement_related_documents",
+		"label": "Related documents",
+		"preset": "odm_related_laws_records_and_agreements"
+	}, {
+		"field_name": "odm_agreement_suspension_related_project",
+		"label": "Related Project",
+		"form_snippet": "markdown.html",
+		"form_placeholder": "Link to Profile map ID for map or concession coordinates. eg. https://opendevelopmentcambodia.net/profiles/economic-land-concessions/?feature_id=elc_gdc_10"
 	}, {
 		"field_name": "maintainer",
+		"required": "true",
+		"validate": "true",
 		"label": "Maintainer",
     "preset": "auto_maintainer"
 	}, {
 		"field_name": "maintainer_email",
+		"required": "true",
+		"validate": "true",
 		"label": "Maintainer email",
     "preset": "auto_maintainer_email"
 	}, {
 		"field_name": "author",
+		"required": "true",
+		"validate": "true",
 		"label": "Author",
     "preset": "auto_author"
 	}, {
 		"field_name": "author_email",
+		"required": "true",
+		"validate": "true",
 		"label": "Author email",
     "preset": "auto_author_email"
 	}],
@@ -249,7 +376,9 @@
 		"preset": "resource_url_upload"
 	}, {
 		"field_name": "name_translated",
-		"preset": "fluent_core_res_name_translated_single_mandatory",
+		"preset": "fluent_core_res_name_translated_single",
+		"validate": "true",
+		"multilingual": "true",
 		"label": {
 			"en": "Name",
 			"th": "Name",
@@ -262,6 +391,8 @@
 	}, {
 		"field_name": "description_translated",
 		"preset": "fluent_core_res_description_translated_markdown_single",
+		"validate": "true",
+		"multilingual": "true",
 		"label": {
 			"en": "Description",
 			"th": "Description",
@@ -278,7 +409,7 @@
 	}, {
 		"field_name": "odm_language",
     "label": "Resource's languages",
-		"required": "true",
+		"validate": "true",
 		"form_placeholder": "Language(s) of the resource.",
 		"preset": "odm_language"
 	}]
