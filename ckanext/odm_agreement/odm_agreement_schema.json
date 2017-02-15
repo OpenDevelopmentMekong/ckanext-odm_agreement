@@ -212,7 +212,7 @@
 		"field_name": "odm_agreement_signature_date",
 		"label": "Signature date",
 		"form_placeholder": "Date a new version or update of the dataset was uploaded.",
-		"preset": "odm_date_modified"
+		"preset": "odm_date"
 	}, {
 		"field_name": "odm_agreement_short_notes_of_change",
 		"preset": "fluent_markdown_single",
@@ -251,7 +251,7 @@
 		"field_name": "odm_agreement_contract_term",
 		"label": "Contract term",
 		"preset": "number",
-		"form_placeholder": ""
+		"form_placeholder": "Year"
 	}, {
 		"field_name": "odm_agreement_payment_for_concession_fees",
 		"label": "Payment for concession fees",
