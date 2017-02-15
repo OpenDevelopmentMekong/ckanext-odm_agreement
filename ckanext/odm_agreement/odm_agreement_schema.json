@@ -50,6 +50,13 @@
 		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Abstract or summary of book or articlee"
 	}, {
+		"field_name": "odm_spatial_range",
+		"label": "Geographic area (spatial range)",
+		"form_placeholder": "The geographic area that the dataset is relevant to (i.e. Cambodia, Laos).",
+		"preset": "odm_spatial_range",
+		"required": "true",
+		"validate": "true"
+	}, {
 		"field_name": "taxonomy",
 		"label": "Topics",
 		"preset": "odm_taxonomy",
@@ -180,13 +187,6 @@
 		"label": "Date modified",
 		"form_placeholder": "Date a new version or update of the dataset was uploaded.",
 		"preset": "odm_date_modified"
-	}, {
-		"field_name": "odm_spatial_range",
-		"label": "Geographic area (spatial range)",
-		"form_placeholder": "The geographic area that the dataset is relevant to (i.e. Cambodia, Laos).",
-		"preset": "odm_spatial_range",
-		"required": "true",
-		"validate": "true"
 	}, {
 		"field_name": "odm_province",
 		"label": "Province(s)",
