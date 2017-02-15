@@ -254,17 +254,17 @@
 		"form_placeholder": "Year"
 	}, {
 		"field_name": "odm_agreement_payment_for_concession_fees",
-		"label": "Payment for concession fees",
+		"label": "Payment for concession fees ($/hectare)",
 		"form_snippet": "markdown.html",
 		"form_placeholder": "Comma separated values with following format: Year 1, $5\nYear 2, $7\nYear 3, $9"
 	}, {
 		"field_name": "odm_agreement_guaranty_deposit_for_contract_implementation",
-		"label": "Guaranty deposit for contract implementation",
+		"label": "Guaranty deposit for contract implementation ($/hectare)",
 		"preset": "number",
 		"form_placeholder": "in USD"
 	}, {
 		"field_name": "odm_agreement_land_use_planning",
-		"label": "Land use planning",
+		"label": "Land use planning (hectare)",
 		"form_snippet": "markdown.html",
 		"form_placeholder": "Comma separated values with following format: Year 1, 1000\nYear 2, 2000\nYear 3, 3000"
 	}, {
