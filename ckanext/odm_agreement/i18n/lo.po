@@ -1,0 +1,30 @@
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: ODM ckanext-odm_agreement\n"
+"POT-Creation-Date: 2017-02-15 12:11+0100\n"
+"PO-Revision-Date: 2017-02-15 12:11+0100\n"
+"Last-Translator: \n"
+"Language-Team: Lao (http://www.transifex.com/open-development-mekong/odm-"
+"ckanext-odm_agreement/language/lo/)\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ../../../ckanext\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: odm_agreement/i18n/metadata_fields.php:3
+msgid "Agreement"
+msgstr ""
+
+#: odm_agreement/lib/odm_agreement_helper.py:27
+msgid ""
+"Thank you for uploading this item. Instructions about vetting system "
+"available on https://wiki.opendevelopmentmekong.net/partners:"
+"content_review#instructions_for_default_issue_on_agreement_records"
+msgstr ""

@@ -1,0 +1,5 @@
+recursive-include ckanext/odm_agreement/fanstatic *
+recursive-include ckanext/odm_agreement/lib *
+recursive-include ckanext/odm_agreement/templates *
+recursive-include ckanext/odm_agreement/i18n *
+recursive-include ckanext *.html *.json

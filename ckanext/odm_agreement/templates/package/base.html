@@ -1,0 +1,24 @@
+{% ckan_extends %}
+
+{% block subtitle %}
+	{% if dataset_type == 'agreement' %}
+		{{ _('Agreements') }}
+	{% else %}
+		{{ super() }}
+	{% endif %}
+{% endblock %}
+
+{% block breadcrumb_content %}
+	{% if dataset_type == 'agreement' %}
+		{% if pkg %}
+			{% set dataset = pkg.title or pkg.name %}
+			<li>{% link_for _('Agreements'), controller='package', type='agreement', action='search' %}</li>
+			<li{{ self.breadcrumb_content_selected() }}>{% link_for dataset|truncate(30), controller='package', type='agreement', action='read', id=pkg.name %}</li>
+		{% else %}
+			<li>{% link_for _('Agreements'), controller='package', type='agreement', action='search' %}</li>
+			<li class="active"><a href="">{{ _('Create agreement') }}</a></li>
+		{% endif %}
+	{% else %}
+		{{ super() }}
+	{% endif %}
+{% endblock %}

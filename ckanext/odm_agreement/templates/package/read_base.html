@@ -1,0 +1,21 @@
+{% ckan_extends %}
+
+{% block content_action %}
+  {% if h.check_access('package_update', {'id':pkg.id }) %}
+    {% if dataset_type == 'agreement' %}
+      {% link_for _('Manage'), controller='package', type='agreement', action='edit', id=pkg.name, class_='btn', icon='wrench' %}
+    {% else %}
+      {{super()}}
+    {% endif%}
+  {% endif %}
+{% endblock %}
+
+{% block content_primary_nav %}
+{% if dataset_type == 'agreement' %}
+  {{ h.build_nav_icon('odm_agreement_read', _('Agreement'), id=pkg.name) }}
+  {{ h.build_nav_icon('dataset_activity', _('Activity Stream'), id=pkg.name) }}
+  {{ h.build_nav_icon('related_list', _('Related'), id=pkg.name) }}
+{% else %}
+  {{super()}}
+{% endif%}
+{% endblock %}

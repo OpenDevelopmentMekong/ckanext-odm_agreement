@@ -1,0 +1,8 @@
+{% ckan_extends %}
+
+{% if dataset_type == 'agreement' %}
+	<li>{% link_for _('Agreement'), controller='package', type='agreement', action='search', highlight_actions = 'new index' %}</li>
+	<li class="active">{% link_for _('Create agreement'), controller='package', type='agreement', action='new' %}</li>
+{% else %}
+	{{ super() }}
+{% endif %}
