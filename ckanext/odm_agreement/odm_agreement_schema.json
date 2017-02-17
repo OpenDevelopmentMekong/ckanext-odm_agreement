@@ -110,6 +110,30 @@
 	      "label": "Released by media"
 	    },
 			{
+	      "value": "by_ingos",
+	      "label": "Released by international non-governmental organizations (INGOs)"
+	    },
+			{
+	      "value": "by_lngos",
+	      "label": "Released by local non-governmental organizations (LNGOs)"
+	    },
+			{
+	      "value": "by_ios",
+	      "label": "Released by international organizations (IOs)"
+	    },
+			{
+	      "value": "by_uns",
+	      "label": "Released by United Nations agencies (UNs)"
+	    },
+			{
+	      "value": "by_academia",
+	      "label": "Released by academia"
+	    },
+			{
+	      "value": "by_think_tanks",
+	      "label": "Released by think tanks"
+	    },
+			{
 	      "value": "other",
 	      "label": "Other"
 	    }
