@@ -230,7 +230,7 @@
 		"form_placeholder": "Information about how up-to-date the metadata is and who is responsible for maintaining it."
 	}, {
 		"field_name": "odm_agreement_amendment_to_contract",
-		"label": "Amendment to contract",
+		"label": "Amendement to agreement",
 		"preset": "odm_related_agreements"
 	}, {
 		"field_name": "odm_agreement_signature_date",
