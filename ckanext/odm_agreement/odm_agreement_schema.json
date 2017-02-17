@@ -147,7 +147,7 @@
 		"form_placeholder": "Unknown default if not listed on the document."
 	}, {
 		"field_name": "odm_agreement_landmatrix_no",
-		"label": "LandMatrix No.",
+		"label": "LandMatrix deal No.",
 		"preset": "number",
 		"form_placeholder": "Look up land matrix number."
 	}, {

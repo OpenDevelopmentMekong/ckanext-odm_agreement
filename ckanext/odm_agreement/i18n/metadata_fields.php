@@ -6,7 +6,7 @@ echo _('Participating share');
 echo _('Contracting Parties');
 echo _('Concession/License name');
 echo _('Disclosure Mode');
-echo _('LandMatrix No.');
+echo _('LandMatrix deal No.');
 echo _('Document reference no.');
 echo _('Amendment to contract');
 echo _('Short notes of change');
