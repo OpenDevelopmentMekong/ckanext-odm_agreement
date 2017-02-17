@@ -73,7 +73,7 @@
 	}, {
 		"field_name": "odm_agreement_participating_share",
 		"label": "Participating share",
-		"preset": "text",
+		"form_snippet": "markdown.html",
 		"form_placeholder": "Comma separated values with following format: company1, %\ncompany2, %\ncompany3, %"
 	}, {
 		"field_name": "odm_agreement_contracting_parties",
