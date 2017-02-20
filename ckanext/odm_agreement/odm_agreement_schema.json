@@ -66,10 +66,9 @@
 	}, {
 		"field_name": "odm_agreement_document_type",
 		"label": "Document type",
-		"preset": "text",
+		"preset": "odm_agreement_document_type",
     "required": "true",
-		"validate": "true",
-		"form_placeholder": "NOTE: Creation of data table pending"
+		"validate": "true"
 	}, {
 		"field_name": "odm_agreement_participating_share",
 		"label": "Participating share",
