@@ -355,7 +355,7 @@
 		"form_placeholder": "The private company has obligations to pay tax to the state. In general, there is no figure."
 	}, {
 		"field_name": "odm_agreement_social_fund",
-		"label": "Total amount of fiscal duties",
+		"label": "Total amount of social fund",
 		"preset": "number",
 		"form_placeholder": "in USD"
 	}, {
