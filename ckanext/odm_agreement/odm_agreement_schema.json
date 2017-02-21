@@ -371,7 +371,7 @@
 		"form_placeholder": "in USD/year"
 	}, {
 		"field_name": "odm_agreement_environmental_protection",
-		"label": "Environmental protection",
+		"label": "Environmental protection obligation",
 		"form_snippet": "markdown.html",
 		"form_placeholder": "The private company has obligations to mitigate the environmental impact of its project implementation to the maximum. Any logging activities are banned. Recommendations from the relevant authorities shall be condisered thoughtly."
 	}, {
