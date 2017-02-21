@@ -77,10 +77,9 @@
 	}, {
 		"field_name": "odm_agreement_contracting_parties",
 		"label": "Contracting Parties",
-		"preset": "text",
+		"preset": "odm_agreement_contracting_parties",
     "required": "true",
-		"validate": "true",
-		"form_placeholder": "NOTE: Creation of data table pending"
+		"validate": "true"
 	}, {
 		"field_name": "odm_agreement_government_entity",
 		"preset": "odm_agreement_government_entity",
@@ -184,6 +183,7 @@
 	}, {
 		"field_name": "version",
 		"label": "Version / Edition",
+		"preset": "version_hidden",
 		"validators": "scheming_required unicode package_version_validator",
 		"form_placeholder": "Version of publication",
 		"required": "true",
@@ -351,7 +351,7 @@
 		"field_name": "odm_agreement_eia",
 		"label": "Environmental impact assessment (EIA)",
 		"form_snippet": "markdown.html",
-		"form_placeholder": "The private company has obligations to pay tax to the state. In general, there is no figure."
+		"form_placeholder": "Company's oblications to comply with planning for mining feasibility and restoration planning (of the nature, especially land in the area). In some case, if it is mentioned, EIA with a particular date may be left here."
 	}, {
 		"field_name": "odm_agreement_social_fund",
 		"label": "Total amount of social fund",

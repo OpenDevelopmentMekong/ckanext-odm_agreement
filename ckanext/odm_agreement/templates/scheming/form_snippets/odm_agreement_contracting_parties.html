@@ -1,0 +1,15 @@
+{% block package_metadata_fields_odm_agreement_contracting_parties %}
+	<div class="control-group">
+		<label class="control-label" for="field-{{ field.field_name }}">{{ h.scheming_language_text(field.label) }}</label>
+		<div class="controls control-full">
+			<select id="field-{{ field.field_name }}"
+				name="{{ h.scheming_language_text(field.field_name) }}"
+				data-module="autocomplete"
+				placeholder="{{ _(h.scheming_language_text(field.form_placeholder)) }}">
+				{% for company in h.odm_dataset_get_resource_from_datatable(h.odm_dataset_get_resource_id_for_field('odm_agreement_contracting_parties')) %}
+					<option {{"selected " if company['id'] == data[field.field_name] }} data-country_codes="{{ company['country_codes'] }}" value="{{ company['id'] }}">{{ company['name'] }}</option>
+				{% endfor %}
+			</select>
+		</div>
+	</div>
+{% endblock %}
