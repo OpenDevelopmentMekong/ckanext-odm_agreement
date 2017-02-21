@@ -16,7 +16,7 @@
       "preset_name": "odm_agreement_document_type",
       "values": {
         "form_snippet": "odm_agreement_document_type.html",
-        "display_snippet": "multiple_list.html",
+        "display_snippet": "text.html",
         "validators": "scheming_required odm_dataset_sanitize_list",
 			  "output_validators": "scheming_multiple_choice_output "
       }
