@@ -322,7 +322,7 @@
 	  ]
 	}, {
 		"field_name": "odm_agreement_guaranty_deposit_for_contract_implementation",
-		"label": "Guaranty deposit for contract implementation ($/hectare)",
+		"label": "Guaranty deposit for contract implementation ($)",
 		"preset": "number",
 		"form_placeholder": "in USD"
 	}, {
