@@ -303,7 +303,7 @@
 	  ]
 	}, {
 		"field_name": "odm_agreement_payment_for_concession_fees",
-		"label": "Payment for concession fees ($/hectare)",
+		"label": "Payment for concession fees",
 		"form_snippet": "markdown.html",
 		"form_placeholder": "Comma separated values with following format: Year 1, $5\nYear 2, $7\nYear 3, $9"
 	}, {
@@ -327,10 +327,24 @@
 		"form_placeholder": "in USD"
 	}, {
 		"field_name": "odm_agreement_land_use_planning",
-		"label": "Land use planning (hectare)",
+		"label": "Land use planning",
 		"form_snippet": "markdown.html",
 		"form_placeholder": "Comma separated values with following format: Year 1, 1000\nYear 2, 2000\nYear 3, 3000"
 	}, {
+		"field_name": "odm_agreement_land_use_planning_unit",
+		"label": "Land use planning unit",
+		"preset": "select",
+		"choices": [
+	    {
+	      "value": "ha",
+	      "label": "Ha"
+	    },
+			{
+	      "value": "m2",
+	      "label": "m2"
+	    }
+	  ]
+	},{
 		"field_name": "odm_agreement_parties_obligations",
 		"label": "Party's obligation in the implementation of the project",
 		"form_snippet": "markdown.html",
