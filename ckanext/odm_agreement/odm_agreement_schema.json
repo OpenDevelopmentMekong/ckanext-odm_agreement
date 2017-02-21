@@ -424,6 +424,10 @@
 		"form_snippet": "markdown.html",
 		"form_placeholder": "Link to Profile map ID for map or concession coordinates. eg. https://opendevelopmentcambodia.net/profiles/economic-land-concessions/?feature_id=elc_gdc_10"
 	}, {
+		"field_name": "odm_reference_document",
+		"label": "Legacy reference document",
+		"form_placeholder": "e.g Tong_Min_Group_Engineering__21.06.2011.pdf"
+	}, {
 		"field_name": "maintainer",
 		"required": "true",
 		"validate": "true",
