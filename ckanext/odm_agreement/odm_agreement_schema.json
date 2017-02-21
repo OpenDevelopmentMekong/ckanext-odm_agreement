@@ -288,6 +288,20 @@
 		"preset": "number",
 		"form_placeholder": "Year"
 	}, {
+		"field_name": "odm_agreement_contract_term_unit",
+		"label": "Contract term unit",
+		"preset": "select",
+		"choices": [
+	    {
+	      "value": "moths",
+	      "label": "Months"
+	    },
+			{
+	      "value": "years",
+	      "label": "Years"
+	    }
+	  ]
+	}, {
 		"field_name": "odm_agreement_payment_for_concession_fees",
 		"label": "Payment for concession fees ($/hectare)",
 		"form_snippet": "markdown.html",
