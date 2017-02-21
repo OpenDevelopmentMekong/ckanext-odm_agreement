@@ -308,7 +308,7 @@
 		"form_placeholder": "Comma separated values with following format: Year 1, $5\nYear 2, $7\nYear 3, $9"
 	}, {
 		"field_name": "odm_agreement_payment_for_concession_fees_unit",
-		"label": "Contract term unit",
+		"label": "Payment for concession fees unit",
 		"preset": "select",
 		"choices": [
 	    {
