@@ -392,7 +392,7 @@
 	}, {
 		"field_name": "odm_agreement_eia",
 		"label": "Environmental impact assessment (EIA)",
-		"form_snippet": "markdown.html",
+		"preset": "odm_agreement_eia",
 		"form_placeholder": "Company's oblications to comply with planning for mining feasibility and restoration planning (of the nature, especially land in the area). In some case, if it is mentioned, EIA with a particular date may be left here."
 	}, {
 		"field_name": "odm_agreement_social_fund",
