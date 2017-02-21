@@ -286,7 +286,7 @@
 		"field_name": "odm_agreement_contract_term",
 		"label": "Contract term",
 		"preset": "number",
-		"form_placeholder": "Year"
+		"form_placeholder": "Period of time, please specify unit below."
 	}, {
 		"field_name": "odm_agreement_contract_term_unit",
 		"label": "Contract term unit",
