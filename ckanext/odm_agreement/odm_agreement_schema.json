@@ -307,6 +307,20 @@
 		"form_snippet": "markdown.html",
 		"form_placeholder": "Comma separated values with following format: Year 1, $5\nYear 2, $7\nYear 3, $9"
 	}, {
+		"field_name": "odm_agreement_payment_for_concession_fees_unit",
+		"label": "Contract term unit",
+		"preset": "select",
+		"choices": [
+	    {
+	      "value": "$_per_ha",
+	      "label": "$/ha"
+	    },
+			{
+	      "value": "$_per_m2",
+	      "label": "$/m2"
+	    }
+	  ]
+	}, {
 		"field_name": "odm_agreement_guaranty_deposit_for_contract_implementation",
 		"label": "Guaranty deposit for contract implementation ($/hectare)",
 		"preset": "number",
