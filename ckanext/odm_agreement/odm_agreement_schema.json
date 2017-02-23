@@ -346,13 +346,27 @@
 	  ]
 	},{
 		"field_name": "odm_agreement_parties_obligations",
-		"label": "Party's obligation in the implementation of the project",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Party's obligation in the implementation of the project",
+			"th": "Party's obligation in the implementation of the project",
+			"km": "Party's obligation in the implementation of the project",
+			"vi": "Party's obligation in the implementation of the project",
+			"my": "Party's obligation in the implementation of the project်း"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Short summary of the general obligations for the private company"
 	}, {
 		"field_name": "odm_agreement_job_creation_summary",
-		"label": "Job creation summary",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Job creation summary",
+			"th": "Job creation summary",
+			"km": "Job creation summary",
+			"vi": "Job creation summary",
+			"my": "Job creation summary"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Obligations of the private company in recruiting local people for work, instead of foreigners."
 	}, {
 		"field_name": "odm_agreement_job_creation_number",
@@ -361,8 +375,15 @@
 		"form_placeholder": "Figures can be mentioned occasionally"
 	}, {
 		"field_name": "odm_agreement_training_summary",
-		"label": "Training summary",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Training summary",
+			"th": "Training summary",
+			"km": "Training summary",
+			"vi": "Training summary",
+			"my": "Training summary"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Obligations of the private company in recruting local people for work, instead of foreigners. If there is no technical staff from the local people, they shall be guided by foreigner technical staff; or financial resource allocation shall be planed and iimplemented."
 	}, {
 		"field_name": "odm_agreement_training_number",
@@ -371,18 +392,39 @@
 		"form_placeholder": "in USD/year"
 	}, {
 		"field_name": "odm_agreement_environmental_protection",
-		"label": "Environmental protection obligation",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Environmental protection obligation",
+			"th": "Environmental protection obligation",
+			"km": "Environmental protection obligation",
+			"vi": "Environmental protection obligation",
+			"my": "Environmental protection obligation"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "The private company has obligations to mitigate the environmental impact of its project implementation to the maximum. Any logging activities are banned. Recommendations from the relevant authorities shall be condisered thoughtly."
 	}, {
 		"field_name": "odm_agreement_sociocultural_protection",
-		"label": "Socio-cultural protection",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Socio-cultural protection",
+			"th": "Socio-cultural protection",
+			"km": "Socio-cultural protection",
+			"vi": "Socio-cultural protection",
+			"my": "Socio-cultural protection"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Obligations of the private companies in the relocation and restoration of the people livelihood, and no harmful activities to the people's livelihood and culture. Eg, the company is taking care on the livehood of the workers and their familities: residence, hopital, schools (ELCs). The compay shall not make any harms to the heritage sites, and spiritual areas (mining)."
 	}, {
 		"field_name": "odm_agreement_fiscal_duties_summary",
-		"label": "Fiscal duties summary",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Fiscal duties summary",
+			"th": "Fiscal duties summary",
+			"km": "Fiscal duties summary",
+			"vi": "Fiscal duties summary",
+			"my": "Fiscal duties summary"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "The private company has obligations to pay tax to the state. In general, there is no figure."
 	}, {
 		"field_name": "odm_agreement_fiscal_duties_number",
@@ -393,7 +435,7 @@
 		"field_name": "odm_agreement_eia",
 		"label": "Environmental impact assessment (EIA)",
 		"preset": "odm_agreement_eia",
-		"form_placeholder": "Company's oblications to comply with planning for mining feasibility and restoration planning (of the nature, especially land in the area). In some case, if it is mentioned, EIA with a particular date may be left here."
+		"form_placeholder": "Company's obligations to comply with planning for mining feasibility and restoration planning (of the nature, especially land in the area). In some case, if it is mentioned, EIA with a particular date may be left here."
 	}, {
 		"field_name": "odm_agreement_social_fund",
 		"label": "Total amount of social fund",
@@ -401,8 +443,15 @@
 		"form_placeholder": "in USD"
 	}, {
 		"field_name": "odm_agreement_environmental_fund_summary",
-		"label": "Environmental fund summary",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Environmental fund summary",
+			"th": "Environmental fund summary",
+			"km": "Environmental fund summary",
+			"vi": "Environmental fund summary",
+			"my": "Environmental fund summary"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Activities of the area and nature/environment preservation and restoration, and how funding is managed and spent."
 	}, {
 		"field_name": "odm_agreement_environmental_funds",
@@ -411,8 +460,15 @@
 		"form_placeholder": "in USD"
 	}, {
 		"field_name": "odm_agreement_suspension_revocation_termination",
-		"label": "Suspension and/or revocation or termination",
-		"form_snippet": "markdown.html",
+		"preset": "fluent_markdown_single",
+		"label": {
+			"en": "Suspension and/or revocation or termination",
+			"th": "Suspension and/or revocation or termination",
+			"km": "Suspension and/or revocation or termination",
+			"vi": "Suspension and/or revocation or termination",
+			"my": "Suspension and/or revocation or termination"
+		},
+		"form_languages": ["en", "th", "km", "vi", "my"],
 		"form_placeholder": "Suspension and/or revocation of the mining licenses when certain conditions are met. Termination of the contract (ELCs) may take place on a part of or the entire project upon the agreement of the party or the sole previledge of the state."
 	}, {
 		"field_name": "odm_agreement_related_documents",
