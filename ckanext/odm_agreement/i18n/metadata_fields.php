@@ -8,7 +8,7 @@ echo _('Concession/License name');
 echo _('Disclosure Mode');
 echo _('LandMatrix deal No.');
 echo _('Document reference no.');
-echo _('Amendement to agreement');
+echo _('Amendment to agreement');
 echo _('Short notes of change');
 echo _('Signature date');
 echo _('Related documents');
