@@ -19,3 +19,22 @@
   {{super()}}
 {% endif%}
 {% endblock %}
+
+{% block secondary_content %}
+
+	{% if dataset_type == 'agreement' %}
+		{% set missing_agreement = h.odm_agreement_validate_fields(pkg) %}
+		{% if missing_agreement["package"] or missing_agreement["resources"] %}
+			{% block inconsistency_disclaimer_dataset %}
+				<h2 class="module-heading"><i class="icon-alert"></i> {{ _("Record metadata not complete!!") }}</h2>
+				<div class="disclaimer">
+					<p>{{ _('This agreement is missing some mandatory fields, please complete:') }}</p>
+					<p>{{ h.odm_agreement_validate_fields(pkg) }}</p>
+				</div>
+			{% endblock %}
+		{% endif %}
+	{% endif %}
+
+	{{super()}}
+
+{% endblock %}

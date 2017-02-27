@@ -58,7 +58,8 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     '''Register the plugin's functions above as a template helper function.'''
 
     return {
-      'odm_agreement_get_dataset_type': odm_agreement_helper.get_dataset_type
+      'odm_agreement_get_dataset_type': odm_agreement_helper.get_dataset_type,
+      'odm_agreement_validate_fields' : odm_agreement_helper.validate_fields
     }
 
   def after_create(self, context, pkg_dict):
