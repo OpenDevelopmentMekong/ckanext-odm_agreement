@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '2.1.4'
+version = '2.2.0'
 
 setup(
     name='ckanext-odm_agreement',

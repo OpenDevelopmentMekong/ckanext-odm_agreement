@@ -507,7 +507,12 @@
 		"validate": "true",
 		"label": "Author email",
     "preset": "auto_author_email"
-	}],
+	}, {
+		"field_name": "odm_keywords",
+    "label": "Keywords",
+    "preset": "odm_keywords",
+    "help_text": "INTERNAL USE ONLY: Enter keywords for improving the discoverability of this record via search"
+  }],
 	"resource_fields": [{
 		"field_name": "url",
 		"label": "URL",
