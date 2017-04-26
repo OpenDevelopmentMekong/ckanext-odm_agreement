@@ -76,4 +76,16 @@ def validate_fields(package):
 
 	return missing
 
+def generate_ocds_id(key, data, errors, context):
+
+	if DEBUG:
+		log.info('generate_ocds_id: %s', key)
+
+	value = data.get(key)
+	if not value or value is missing:
+		value_replacement = "ocds-miumsd-" + data[key[:-1] + ("id",)]
+		if value_replacement:
+			data[key] = value_replacement
+
+
 session = {}
