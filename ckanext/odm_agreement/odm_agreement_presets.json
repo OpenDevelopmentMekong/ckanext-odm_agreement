@@ -42,7 +42,8 @@
       "preset_name": "open_contracting_id",
       "values": {
         "form_snippet": "text_hidden.html",
-        "validators": "scheming_required odm_agreement_generate_ocds_id"
+        "validators": "scheming_required",
+				"create_validators": "odm_agreement_generate_ocds_id"
       }
     }
   ]
