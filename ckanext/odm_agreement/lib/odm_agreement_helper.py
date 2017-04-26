@@ -81,7 +81,8 @@ def generate_ocds_id(key, data, errors, context):
 	if DEBUG:
 		log.info('generate_ocds_id: %s %s', key, data)
 
-	data[key] = "ocds-miumsd-" + data[key[:-1] + ("id",)]
+  if key[:-1] + ("id",) in data:
+	   data[key] = "ocds-miumsd-" + data[key[:-1] + ("id",)]
 
 
 session = {}
