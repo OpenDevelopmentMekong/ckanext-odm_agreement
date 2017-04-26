@@ -79,7 +79,7 @@ def validate_fields(package):
 def generate_ocds_id(key, data, errors, context):
 
 	if DEBUG:
-		log.info('generate_ocds_id: %s', key)
+		log.info('generate_ocds_id: %s %s', key, context)
 
 	data[key] = "ocds-miumsd-" + data[key[:-1] + ("id",)]
 
