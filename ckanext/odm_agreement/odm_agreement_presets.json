@@ -43,7 +43,7 @@
       "values": {
         "form_snippet": "text_hidden.html",
         "validators": "scheming_required",
-				"create_validators": "odm_agreement_generate_ocds_id"
+				"output_validators": "odm_agreement_generate_ocds_id"
       }
     }
   ]
