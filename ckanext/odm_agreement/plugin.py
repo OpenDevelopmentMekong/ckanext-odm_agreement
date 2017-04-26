@@ -84,3 +84,11 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
       if review_system:
         if pkg_dict['type'] == 'agreement':
           odm_agreement_helper.create_default_issue_agreement(pkg_dict)
+
+  def after_update(self, context, pkg_dict):
+
+    dataset_type = context['package'].type if 'package' in context else pkg_dict['type']
+    if dataset_type == 'agreement':
+      log.info('after_update: %s', pkg_dict['name'])
+
+      pkg_dict['open_contracting_id'] = "ocds-miumsd-" + pkg_dict["id"]
