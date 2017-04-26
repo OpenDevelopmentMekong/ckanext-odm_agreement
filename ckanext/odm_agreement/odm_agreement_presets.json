@@ -9,7 +9,7 @@
         "form_snippet": "odm_agreement_government_entity.html",
         "display_snippet": "multiple_list.html",
         "validators": "scheming_required odm_dataset_sanitize_list",
-        "output_validators": "scheming_multiple_choice_output "
+        "output_validators": "scheming_multiple_choice_output"
       }
     },
     {
@@ -26,7 +26,7 @@
         "form_snippet": "odm_agreement_contracting_parties.html",
         "display_snippet": "multiple_list.html",
         "validators": "scheming_required odm_dataset_sanitize_list",
-        "output_validators": "scheming_multiple_choice_output "
+        "output_validators": "scheming_multiple_choice_output"
       }
     },
     {
@@ -35,7 +35,15 @@
         "form_snippet": "odm_agreement_eia.html",
         "display_snippet": "multiple_list.html",
         "validators": "scheming_required odm_dataset_sanitize_list",
-        "output_validators": "scheming_multiple_choice_output "
+        "output_validators": "scheming_multiple_choice_output"
+      }
+    },
+    {
+      "preset_name": "open_contracting_id",
+      "values": {
+        "form_snippet": "text_hidden.html",
+        "validators": "scheming_required",
+				"output_validators": "odm_agreement_generate_ocds_id"
       }
     }
   ]

@@ -20,6 +20,7 @@ log = logging.getLogger(__name__)
 class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
   '''OD Mekong agreement plugin.'''
 
+  plugins.implements(plugins.IValidators, inherit=True)
   plugins.implements(plugins.IConfigurer)
   plugins.implements(plugins.ITemplateHelpers)
   plugins.implements(plugins.IRoutes, inherit=True)
@@ -60,6 +61,15 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     return {
       'odm_agreement_get_dataset_type': odm_agreement_helper.get_dataset_type,
       'odm_agreement_validate_fields' : odm_agreement_helper.validate_fields
+    }
+
+  def get_validators(self):
+    '''Register the plugin's functions above as validators.'''
+
+    log.debug("get_validators")
+
+    return {
+      'odm_agreement_generate_ocds_id': odm_agreement_helper.generate_ocds_id
     }
 
   def after_create(self, context, pkg_dict):
