@@ -293,7 +293,7 @@
 		"preset": "select",
 		"choices": [
 	    {
-	      "value": "moths",
+	      "value": "months",
 	      "label": "Months"
 	    },
 			{
