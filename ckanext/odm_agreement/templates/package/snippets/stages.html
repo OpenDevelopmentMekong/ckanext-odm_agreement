@@ -1,6 +1,6 @@
 {% ckan_extends %}
 
-{% if dataset_type == 'agreement' %}
+{% if pkg.type == 'agreement' %}
 <ol class="stages {{ class }}">
 	<li class="first {{ s1 }}">
 		{% if s1 != 'complete' %}
