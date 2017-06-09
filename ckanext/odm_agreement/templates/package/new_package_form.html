@@ -4,7 +4,7 @@
   {% if form_style != 'edit' %}
     {{ super() }}
   {% else %}
-		{% if pkg.type == 'agreement' %}
+		{% if dataset_type == 'agreement' %}
 			{{ _('Update agreement') }}
 		{% else %}
 			{{ super() }}

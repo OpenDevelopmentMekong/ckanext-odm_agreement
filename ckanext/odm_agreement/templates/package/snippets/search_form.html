@@ -1,6 +1,6 @@
 {% ckan_extends %}
 
-	{% if pkg.type == 'agreement' %}
+	{% if dataset_type == 'agreement' %}
 		{% set placeholder = placeholder if placeholder else _('Search agreements...') %}
 	{% else %}
 		{{super()}}
