@@ -25,7 +25,7 @@
 	{% if dataset_type == 'agreement' and c.userobj %}
 		{% set missing_agreement = h.odm_agreement_validate_fields(pkg) %}
 		{% if missing_agreement["package"] or missing_agreement["resources"] %}
-			{% block inconsistency_disclaimer_dataset %}
+			{% block inconsistency_disclaimer_agreement %}
 				<h2 class="module-heading"><i class="icon-alert"></i> {{ _("Record metadata not complete!!") }}</h2>
 				<div class="disclaimer">
 					<p>{{ _('This agreement is missing some mandatory fields, please complete:') }}</p>
