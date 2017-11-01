@@ -21,6 +21,7 @@
 
 {% block secondary_content %}
 
+{#
 	{% if dataset_type == 'agreement' and c.userobj %}
 		{% set missing_agreement = h.odm_agreement_validate_fields(pkg) %}
 		{% if missing_agreement["package"] or missing_agreement["resources"] %}
@@ -33,6 +34,7 @@
 			{% endblock %}
 		{% endif %}
 	{% endif %}
+#}
 
 	{{super()}}
 
