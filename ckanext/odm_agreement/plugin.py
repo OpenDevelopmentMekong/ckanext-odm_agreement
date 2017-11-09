@@ -79,8 +79,8 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     if dataset_type == 'agreement':
       log.debug('after_create: %s', pkg_dict['name'])
 
-      # Create default Issue
-      review_system = config.get("ckanext.issues.review_system", False) == "true"
+      #review_system = config.get("ckanext.issues.review_system", False) == "true"
+      review_system = True
       if review_system:
         if pkg_dict['type'] == 'agreement':
           odm_agreement_helper.create_default_issue_agreement(pkg_dict)
