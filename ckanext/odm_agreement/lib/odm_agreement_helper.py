@@ -8,7 +8,6 @@ import os
 import logging
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
-from genshi.template.text import NewTextTemplate
 from ckan.lib.base import render
 
 DEBUG = True
@@ -30,7 +29,7 @@ def create_default_issue_agreement(pkg_info):
 			't0': toolkit._("Thank you for uploading this item. Instructions about vetting system available on https://wiki.opendevelopmentmekong.net/partners:content_review#instructions_for_default_issue_on_agreement")
 		}
 
-		issue_message = render('messages/default_issue_agreement.txt',extra_vars=extra_vars,loader_class=NewTextTemplate)
+		issue_message = render('messages/default_issue_agreement.txt',extra_vars=extra_vars)
 
 		params = {'title':'User Agreement Upload Checklist','description':issue_message,'dataset_id':pkg_info['id']}
 		toolkit.get_action('issue_create')(data_dict=params)
