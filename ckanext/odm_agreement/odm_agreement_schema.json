@@ -177,7 +177,7 @@
 	}, {
 		"field_name": "owner_org",
 		"label": "Organization",
-		"preset": "dataset_organization",
+		"preset": "odm_organization",
 		"required": "true",
 		"validate": "true"
 	}, {
