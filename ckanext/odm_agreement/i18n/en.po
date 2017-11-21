@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odm_agreement\n"
-"POT-Creation-Date: 2017-02-15 12:11+0100\n"
-"PO-Revision-Date: 2017-02-15 12:11+0100\n"
+"POT-Creation-Date: 2017-11-21 09:55+0100\n"
+"PO-Revision-Date: 2017-11-21 09:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -16,12 +16,232 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: odm_agreement/i18n/metadata_fields.php:3
+msgid "Contract Name"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:4
+msgid "Objective"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:5
+msgid "Participating share"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:6
+msgid "Contracting Parties"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:7
+msgid "Concession/License name"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:8
+msgid "Disclosure Mode"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:9
+msgid "LandMatrix deal No."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:10
+msgid "Document reference no."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:11
+msgid "Amendment to agreement"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:12
+msgid "Short notes of change"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:13
+msgid "Signature date"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:14
+#: odm_agreement/i18n/metadata_fields.php:35
+msgid "Related documents"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:15
+msgid "Links to source"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:16
+msgid "Granted area"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:17
+msgid "Contract term"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:18
+msgid "Payment for concession fees ($/hectare)"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:19
+msgid "Guaranty deposit for contract implementation ($/hectare)"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:20
+msgid "Land use planning (hectare)"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:21
+msgid "Party's obligation in the implementation of the project"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:22
+msgid "Job creation summary"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:23
+msgid "Number of created jobs"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:24
+msgid "Training summary"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:25
+msgid "Fund allocation for training"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:26
+msgid "Environmental protection"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:27
+msgid "Socio-cultural protection"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:28
+msgid "Fiscal duties summary"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:29
+#: odm_agreement/i18n/metadata_fields.php:31
+msgid "Total amount of fiscal duties"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:30
+msgid "Environmental impact assessment (EIA)"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:32
+msgid "Environmental fund summary"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:33
+msgid "Total amount of environmental funds"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:34
+msgid "Suspension and/or revocation or termination"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:36
+msgid "Province(s)"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:37
+msgid "Yes"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:38
+msgid "No"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:39
+msgid "Unclear copyright"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:40
+msgid "To be determined"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:41
+msgid "Keywords"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:42
+msgid "Date modified"
+msgstr ""
+
+#: odm_agreement/templates/header.html:5
+#: odm_agreement/templates/package/read_base.html:15
+#: odm_agreement/templates/package/snippets/new_package_breadcrumb.html:4
 msgid "Agreement"
 msgstr ""
 
-#: odm_agreement/lib/odm_agreement_helper.py:27
-msgid ""
-"Thank you for uploading this item. Instructions about vetting system "
-"available on https://wiki.opendevelopmentmekong.net/partners:"
-"content_review#instructions_for_default_issue_on_agreement_records"
+#: odm_agreement/templates/package/base.html:5
+#: odm_agreement/templates/package/base.html:15
+#: odm_agreement/templates/package/base.html:18
+#: odm_agreement/templates/package/search.html:5
+#: odm_agreement/templates/package/search.html:13
+msgid "Agreements"
+msgstr ""
+
+#: odm_agreement/templates/package/base.html:19
+#: odm_agreement/templates/package/new.html:5
+#: odm_agreement/templates/package/snippets/new_package_breadcrumb.html:5
+#: odm_agreement/templates/package/snippets/stages.html:7
+#: odm_agreement/templates/package/snippets/stages.html:9
+msgid "Create agreement"
+msgstr ""
+
+#: odm_agreement/templates/package/base_form_page.html:7
+msgid "What are Agreements?"
+msgstr ""
+
+#: odm_agreement/templates/package/edit_base.html:5
+msgid "View agreement"
+msgstr ""
+
+#: odm_agreement/templates/package/new_package_form.html:8
+msgid "Update agreement"
+msgstr ""
+
+#: odm_agreement/templates/package/read_base.html:6
+msgid "Manage"
+msgstr ""
+
+#: odm_agreement/templates/package/read_base.html:16
+msgid "Activity Stream"
+msgstr ""
+
+#: odm_agreement/templates/package/read_base.html:29
+msgid "Record metadata not complete!!"
+msgstr ""
+
+#: odm_agreement/templates/package/read_base.html:31
+msgid "This agreement is missing some mandatory fields, please complete:"
+msgstr ""
+
+#: odm_agreement/templates/package/search.html:23
+msgid "Add agreement"
+msgstr ""
+
+#: odm_agreement/templates/package/snippets/package_form.html:5
+msgid "Are you sure you want to delete this dataset?"
+msgstr ""
+
+#: odm_agreement/templates/package/snippets/package_form.html:6
+msgid "Delete"
+msgstr ""
+
+#: odm_agreement/templates/package/snippets/search_form.html:4
+#: odm_agreement/templates/snippets/search_form.html:6
+msgid "Search agreements..."
+msgstr ""
+
+#: odm_agreement/templates/package/snippets/stages.html:14
+#: odm_agreement/templates/package/snippets/stages.html:18
+#: odm_agreement/templates/package/snippets/stages.html:20
+msgid "Add data"
+msgstr ""
+
+#: odm_agreement/templates/snippets/search_form.html:12
+msgid "Submit"
 msgstr ""

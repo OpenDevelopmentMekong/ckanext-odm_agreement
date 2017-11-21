@@ -33,7 +33,12 @@ echo _('Environmental fund summary');
 echo _('Total amount of environmental funds');
 echo _('Suspension and/or revocation or termination');
 echo _('Related documents');
-echo _('');
-echo _('');
+echo _('Province(s)');
+echo _('Yes');
+echo _('No');
+echo _('Unclear copyright');
+echo _('To be determined');
+echo _('Keywords');
+echo _('Date modified');
 
 ?>
