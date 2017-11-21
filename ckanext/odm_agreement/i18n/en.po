@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odm_agreement\n"
-"POT-Creation-Date: 2017-11-21 09:55+0100\n"
-"PO-Revision-Date: 2017-11-21 09:55+0100\n"
+"POT-Creation-Date: 2017-11-21 11:22+0100\n"
+"PO-Revision-Date: 2017-11-21 11:22+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -167,6 +167,221 @@ msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:42
 msgid "Date modified"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:43
+msgid "Main title"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:44
+msgid "eg. my-dataset"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:45
+msgid "Abstract or summary of book or article"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:46
+msgid ""
+"The geographic area that the dataset is relevant to (i.e. Cambodia, Laos)."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:47
+msgid "e.g. economy, mental health, government"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:48
+msgid ""
+"Comma separated values with following format: company1, %\\ncompany2, %"
+"\\ncompany3, %"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:49
+msgid ""
+"The jurisdictional agency responsible for the enforcing and implementing the "
+"(law) legal document."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:50
+msgid ""
+"The concession or license name, is meant for the name of the license area or "
+"block which is covered by the contract."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:51
+msgid "Unknown default if not listed on the document."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:52
+msgid "Look up land matrix number."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:53
+msgid ""
+"A few sentences describing legal considerations for people who access the "
+"website and/or use its contents."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:54
+msgid "Version of publication"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:55
+msgid "Language(s) of the dataset, including resources within dataset."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:56
+msgid "Date a new version or update of the dataset was created."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:57
+#: odm_agreement/i18n/metadata_fields.php:58
+#: odm_agreement/i18n/metadata_fields.php:61
+msgid "Date a new version or update of the dataset was uploaded."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:59
+msgid "The province(s) this dataset relates to"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:60
+msgid ""
+"Information about how up-to-date the metadata is and who is responsible for "
+"maintaining it."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:62
+msgid "Only if the document is an amendent or annex"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:63
+msgid "Official URLs where the document is made available."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:64
+msgid ""
+"Contact information for the individual or organization that is responsible "
+"for or most knowledgeable about the dataset. This could be the author of a "
+"report, the contact information for the relevant department of an "
+"organization that produced a report, or the data analyst, mapper or "
+"researcher that produced a dataset or report."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:65
+msgid "in hectares"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:66
+msgid "Period of time, please specify unit below."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:67
+msgid ""
+"Comma separated values with following format: Year 1, $5\\nYear 2, $7\\nYear "
+"3, $9"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:68
+msgid "in USD"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:69
+msgid ""
+"Comma separated values with following format: Year 1, 1000\\nYear 2, "
+"2000\\nYear 3, 3000"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:70
+msgid "Short summary of the general obligations for the private company"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:71
+msgid ""
+"Obligations of the private company in recruiting local people for work, "
+"instead of foreigners."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:72
+msgid "Figures can be mentioned occasionally"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:73
+msgid ""
+"Obligations of the private company in recruting local people for work, "
+"instead of foreigners. If there is no technical staff from the local people, "
+"they shall be guided by foreigner technical staff; or financial resource "
+"allocation shall be planed and implemented."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:74
+msgid "in USD/year"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:75
+msgid ""
+"The private company has obligations to mitigate the environmental impact of "
+"its project implementation to the maximum. Any logging activities are "
+"banned. Recommendations from the relevant authorities shall be condisered "
+"thoughtly."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:76
+msgid ""
+"Obligations of the private companies in the relocation and restoration of "
+"the people livelihood, and no harmful activities to the people's livelihood "
+"and culture. Eg, the company is taking care on the livehood of the workers "
+"and their familities: residence, hopital, schools (ELCs). The compay shall "
+"not make any harms to the heritage sites, and spiritual areas (mining)."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:77
+msgid ""
+"The private company has obligations to pay tax to the state. In general, "
+"there is no figure."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:78
+msgid ""
+"Company's obligations to comply with planning for mining feasibility and "
+"restoration planning (of the nature, especially land in the area). In some "
+"case, if it is mentioned, EIA with a particular date may be left here."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:79
+msgid ""
+"Activities of the area and nature/environment preservation and restoration, "
+"and how funding is managed and spent."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:80
+msgid ""
+"Suspension and/or revocation of the mining licenses when certain conditions "
+"are met. Termination of the contract (ELCs) may take place on a part of or "
+"the entire project upon the agreement of the party or the sole previledge of "
+"the state."
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:81
+msgid ""
+"Link to Profile map ID for map or concession coordinates. eg. https://"
+"opendevelopmentcambodia.net/profiles/economic-land-concessions/?"
+"feature_id=elc_gdc_10"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:82
+msgid "e.g Tong_Min_Group_Engineering__21.06.2011.pdf"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:83
+msgid "eg. January 2011 Gold Prices"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:84
+msgid "Some useful notes about the data"
+msgstr ""
+
+#: odm_agreement/i18n/metadata_fields.php:85
+msgid "Language(s) of the resource."
 msgstr ""
 
 #: odm_agreement/templates/header.html:5
