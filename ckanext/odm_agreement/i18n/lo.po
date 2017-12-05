@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ODM ckanext-odm_agreement\n"
-"POT-Creation-Date: 2017-11-21 11:22+0100\n"
-"PO-Revision-Date: 2017-11-21 11:22+0100\n"
+"POT-Creation-Date: 2017-12-05 10:40+0100\n"
+"PO-Revision-Date: 2017-12-05 10:40+0100\n"
 "Last-Translator: \n"
 "Language-Team: Lao (http://www.transifex.com/open-development-mekong/odm-"
 "ckanext-odm_agreement/language/lo/)\n"
@@ -195,8 +195,9 @@ msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:48
 msgid ""
-"Comma separated values with following format: company1, %\\ncompany2, %"
-"\\ncompany3, %"
+"Comma separated values with following format: company1, %\n"
+"company2, %\n"
+"company3, %"
 msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:49
@@ -280,8 +281,9 @@ msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:67
 msgid ""
-"Comma separated values with following format: Year 1, $5\\nYear 2, $7\\nYear "
-"3, $9"
+"Comma separated values with following format: Year 1, $5\n"
+"Year 2, $7\n"
+"Year 3, $9"
 msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:68
@@ -290,8 +292,9 @@ msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:69
 msgid ""
-"Comma separated values with following format: Year 1, 1000\\nYear 2, "
-"2000\\nYear 3, 3000"
+"Comma separated values with following format: Year 1, 1000\n"
+"Year 2, 2000\n"
+"Year 3, 3000"
 msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:70
@@ -331,7 +334,7 @@ msgstr ""
 #: odm_agreement/i18n/metadata_fields.php:76
 msgid ""
 "Obligations of the private companies in the relocation and restoration of "
-"the people livelihood, and no harmful activities to the people's livelihood "
+"the people livelihood, and no harmful activities to the people\"s livelihood "
 "and culture. Eg, the company is taking care on the livehood of the workers "
 "and their familities: residence, hopital, schools (ELCs). The compay shall "
 "not make any harms to the heritage sites, and spiritual areas (mining)."
@@ -345,7 +348,7 @@ msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:78
 msgid ""
-"Company's obligations to comply with planning for mining feasibility and "
+"Company\"s obligations to comply with planning for mining feasibility and "
 "restoration planning (of the nature, especially land in the area). In some "
 "case, if it is mentioned, EIA with a particular date may be left here."
 msgstr ""
@@ -385,6 +388,82 @@ msgstr ""
 
 #: odm_agreement/i18n/metadata_fields.php:85
 msgid "Language(s) of the resource."
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:3
+msgid "Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:4
+msgid "Contract Amendment"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:5
+msgid "Contract Annex"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:6
+msgid "Contract Farming Agreement"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:7
+msgid "Energy Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:8
+msgid "Exploration Permit/License"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:9
+msgid "Exploitation/extraction permit or license"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:10
+msgid "Forest Concession Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:11
+msgid "In-land Fishcatchment Concession Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:12
+msgid "Infrastructure Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:13
+msgid "Investment Promotion Agreement"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:14
+msgid "Joint Venture Agreement"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:15
+msgid "Land Concession Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:16
+msgid "Memorandum of Understanding"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:17
+msgid "Maritime Fishcatchment Concession Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:18
+msgid "Other long-term leasing contract of State Assets "
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:19
+msgid "Production or Profit Sharing Agreement"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:20
+msgid "Service Contract"
+msgstr ""
+
+#: odm_agreement/i18n/odm_agreement_document_type.php:21
+msgid "Social Land Concession"
 msgstr ""
 
 #: odm_agreement/templates/header.html:5
