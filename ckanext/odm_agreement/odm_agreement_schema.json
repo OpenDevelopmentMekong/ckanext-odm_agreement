@@ -48,7 +48,7 @@
 			"my": "Objective"
 		},
 		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "Abstract or summary of book or articlee"
+		"form_placeholder": "Abstract or summary of book or article"
 	}, {
 		"field_name": "odm_spatial_range",
 		"label": "Geographic area (spatial range)",
@@ -177,7 +177,7 @@
 	}, {
 		"field_name": "owner_org",
 		"label": "Organization",
-		"preset": "dataset_organization",
+		"preset": "odm_organization",
 		"required": "true",
 		"validate": "true"
 	}, {
@@ -384,7 +384,7 @@
 			"my": "Training summary"
 		},
 		"form_languages": ["en", "th", "km", "vi", "my"],
-		"form_placeholder": "Obligations of the private company in recruting local people for work, instead of foreigners. If there is no technical staff from the local people, they shall be guided by foreigner technical staff; or financial resource allocation shall be planed and iimplemented."
+		"form_placeholder": "Obligations of the private company in recruting local people for work, instead of foreigners. If there is no technical staff from the local people, they shall be guided by foreigner technical staff; or financial resource allocation shall be planed and implemented."
 	}, {
 		"field_name": "odm_agreement_training_number",
 		"label": "Fund allocation for training",
