@@ -1,20 +1,8 @@
 {% ckan_extends %}
 
 {% block search_input %}
-
-  {% if c.type == 'agreement' %}
-  	{% set placeholder = _('Search agreements...') %}
-    <div class="search-input control-group {{ search_class }}">
-      <input type="text" class="search" name="q" value="{{ query }}" autocomplete="off" placeholder="{{ placeholder }}">
-      {% block search_input_button %}
-      <button type="submit" value="search">
-        <i class="icon-search"></i>
-        <span>{{ _('Submit') }}</span>
-      </button>
-      {% endblock %}
-    </div>
-  {% else %}
+    {% if c.type == 'agreement' %}
+  	    {% set placeholder = _('Search agreements...') %}
+    {% endif %}
   	{{super()}}
-  {% endif%}
-
 {% endblock %}
