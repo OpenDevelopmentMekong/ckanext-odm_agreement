@@ -2,7 +2,7 @@
 
 {% block content_action %}
 	{% if dataset_type == 'agreement' %}
-		{% link_for _('View agreement'), controller='package', type='agreement', action='read', id=pkg.name, class_='btn', icon='eye-open' %}
+		{% link_for _('View agreement'), controller='package', type='agreement', action='read', id=pkg.name, class_='btn', icon='eye' %}
 	{% else %}
 		{{super()}}
 	{% endif%}
