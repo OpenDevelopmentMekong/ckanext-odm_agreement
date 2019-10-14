@@ -4,19 +4,10 @@
   "about_url": "http://github.com/open-data/ckanext-scheming#preset",
   "presets": [
     {
-      "preset_name": "odm_agreement_government_entity",
-      "values": {
-        "form_snippet": "odm_agreement_government_entity.html",
-        "display_snippet": "multiple_list.html",
-        "validators": "scheming_required odm_dataset_sanitize_list",
-        "output_validators": "scheming_multiple_choice_output"
-      }
-    },
-    {
       "preset_name": "odm_agreement_document_type",
       "values": {
         "form_snippet": "odm_agreement_document_type.html",
-        "display_snippet": "text.html",
+        "display_snippet": "resource_lookup.html",
         "validators": "scheming_required"
       }
     },
@@ -24,7 +15,7 @@
       "preset_name": "odm_agreement_contracting_parties",
       "values": {
         "form_snippet": "odm_agreement_contracting_parties.html",
-        "display_snippet": "multiple_list.html",
+        "display_snippet": "multiple_list_resource.html",
         "validators": "scheming_required odm_dataset_sanitize_list",
         "output_validators": "scheming_multiple_choice_output"
       }
