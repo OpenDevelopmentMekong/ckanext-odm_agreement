@@ -8,15 +8,13 @@
 				data-module="autocomplete"
 				placeholder="{{ h.scheming_language_text(field.form_placeholder) }}"
 				class="odm_spatial_range-specific">
-				{% for dataset in h.odm_nav_get_all_library_records_complete() %}
-					{% if dataset['document_type'] == 'eia_seia' %}
-						<option
-							id="field-{{ field.field_name }}-{{ dataset }}"
-							{{"selected " if dataset in data[field.field_name] }}
-							value="{{ dataset['name'] }}"
-							data-country_codes="{{ dataset['odm_spatial_range'] | join }}">{{ dataset['title'] }}
-						</option>
-					{% endif %}
+				{% for dataset in h.odm_nav_get_library_for_doctype('eia_seia') %}
+                    <option
+                        id="field-{{ field.field_name }}-{{ dataset }}"
+                        {{"selected " if dataset in data[field.field_name] }}
+                        value="{{ dataset['name'] }}"
+                        data-country_codes="{{ dataset['odm_spatial_range'] | join }}">{{ dataset['title'] }}
+                    </option>
 				{% endfor %}
 			</select>
 		</div>
