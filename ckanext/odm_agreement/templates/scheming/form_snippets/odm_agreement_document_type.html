@@ -6,7 +6,7 @@
 				name="{{ h.scheming_language_text(field.field_name) }}"
 				data-module="autocomplete"
 				placeholder="{{ h.scheming_language_text(field.form_placeholder) }}">
-				{% for document_type in h.odm_dataset_get_resource_from_datatable(h.odm_dataset_get_resource_id_for_field('odm_agreement_document_type')) %}
+				{% for document_type in h.odm_dataset_get_resource_for_field_for_form('odm_agreement_document_type') %}
 					<option {{"selected " if document_type['id'] == data[field.field_name] }} data-country_codes="{{ document_type['country_codes'] }}" value="{{ document_type['id'] }}">{{ document_type['name'] }}</option>
 				{% endfor %}
 			</select>
