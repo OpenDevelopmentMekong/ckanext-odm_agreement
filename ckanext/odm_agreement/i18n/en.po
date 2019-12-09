@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the
 # ckanext-odm_agreement project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -25,7 +25,7 @@ msgstr ""
 #: ckanext/odm_agreement/templates/package/search.html:5
 #: ckanext/odm_agreement/templates/package/search.html:13
 msgid "Agreements"
-msgstr ""
+msgstr "Agreements"
 
 #: ckanext/odm_agreement/templates/package/base.html:19
 #: ckanext/odm_agreement/templates/package/new.html:5
@@ -33,67 +33,74 @@ msgstr ""
 #: ckanext/odm_agreement/templates/package/snippets/stages.html:7
 #: ckanext/odm_agreement/templates/package/snippets/stages.html:9
 msgid "Create agreement"
-msgstr ""
+msgstr "Create agreement"
 
 #: ckanext/odm_agreement/templates/package/base_form_page.html:7
 msgid "What are Agreements?"
-msgstr ""
+msgstr "What are Agreements?"
 
 #: ckanext/odm_agreement/templates/package/base_form_page.html:10
 msgid ""
-" Agreements provide metadata needed to help users find the documents most"
-" appropriate to their needs. Certain fields on this form are mandatory. "
-"Your agreement cannot be uploaded without providing information in those "
-"fields. Please provide as much information as possible, even when fields "
-"are not mandatory. If you need more guidance on how to do this please see"
-" <a href=\"https://wiki.opendevelopmentmekong.net/metadata\" "
-"target=\"_blank\">WIKI</a>. Once you have completed the form, plse check "
-"to make sure it is accurate and complete. Your recommended agreement item"
-" will be made available to the public once your agreement has been "
-"vetted. "
+" Agreements provide metadata needed to help users find the documents most "
+"appropriate to their needs. Certain fields on this form are mandatory. Your "
+"agreement cannot be uploaded without providing information in those fields. "
+"Please provide as much information as possible, even when fields are not "
+"mandatory. If you need more guidance on how to do this please see <a "
+"href=\"https://wiki.opendevelopmentmekong.net/metadata\" "
+"target=\"_blank\">WIKI</a>. Once you have completed the form, plse check to "
+"make sure it is accurate and complete. Your recommended agreement item will "
+"be made available to the public once your agreement has been vetted. "
 msgstr ""
+" Agreements provide metadata needed to help users find the documents most "
+"appropriate to their needs. Certain fields on this form are mandatory. Your "
+"agreement cannot be uploaded without providing information in those fields. "
+"Please provide as much information as possible, even when fields are not "
+"mandatory. If you need more guidance on how to do this please see <a "
+"href=\"https://wiki.opendevelopmentmekong.net/metadata\" "
+"target=\"_blank\">WIKI</a>. Once you have completed the form, plse check to "
+"make sure it is accurate and complete. Your recommended agreement item will "
+"be made available to the public once your agreement has been vetted. "
 
 #: ckanext/odm_agreement/templates/package/edit_base.html:5
 msgid "View agreement"
-msgstr ""
+msgstr "View agreement"
 
 #: ckanext/odm_agreement/templates/package/new_package_form.html:8
 msgid "Update agreement"
-msgstr ""
+msgstr "Update agreement"
 
 #: ckanext/odm_agreement/templates/package/read_base.html:7
 msgid "Manage"
-msgstr ""
+msgstr "Manage"
 
 #: ckanext/odm_agreement/templates/package/read_base.html:17
 #: ckanext/odm_agreement/templates/package/snippets/new_package_breadcrumb.html:4
 msgid "Agreement"
-msgstr ""
+msgstr "Agreement"
 
 #: ckanext/odm_agreement/templates/package/read_base.html:18
 msgid "Activity Stream"
-msgstr ""
+msgstr "Activity Stream"
 
 #: ckanext/odm_agreement/templates/package/search.html:23
 msgid "Add agreement"
-msgstr ""
+msgstr "Add agreement"
 
 #: ckanext/odm_agreement/templates/package/snippets/package_form.html:5
 msgid "Are you sure you want to delete this dataset?"
-msgstr ""
+msgstr "Are you sure you want to delete this dataset?"
 
 #: ckanext/odm_agreement/templates/package/snippets/package_form.html:6
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: ckanext/odm_agreement/templates/package/snippets/search_form.html:4
 #: ckanext/odm_agreement/templates/snippets/search_form.html:5
 msgid "Search agreements..."
-msgstr ""
+msgstr "Search agreements..."
 
 #: ckanext/odm_agreement/templates/package/snippets/stages.html:14
 #: ckanext/odm_agreement/templates/package/snippets/stages.html:18
 #: ckanext/odm_agreement/templates/package/snippets/stages.html:20
 msgid "Add data"
-msgstr ""
-
+msgstr "Add data"

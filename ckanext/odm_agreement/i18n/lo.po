@@ -1,587 +1,116 @@
+# Translations template for ckanext-odm_agreement.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the
+# ckanext-odm_agreement project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# 
 # Translators:
 # Souchitta Chemcheng <c.souchitta@gmail.com>, 2018
-# Christina Cilento <christina@villagefocus.org>, 2018
+# phonephasouk volabouth <phonephasouk@villagefocus.org>, 2019
 # 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ckanext-odm_agreement\n"
-"POT-Creation-Date: 2017-12-05 10:40+0100\n"
+"Project-Id-Version: ckanext-odm_agreement 3.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-10-14 11:22+0000\n"
 "PO-Revision-Date: 2017-06-02 17:40+0000\n"
-"Last-Translator: Christina Cilento <christina@villagefocus.org>, 2018\n"
+"Last-Translator: phonephasouk volabouth <phonephasouk@villagefocus.org>, 2019\n"
 "Language-Team: Lao (https://www.transifex.com/open-development-mekong/teams/27158/lo/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
 "Language: lo\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.7.1\n"
-"X-Poedit-Basepath: ../../../ckanext\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 
-#: odm_agreement/i18n/metadata_fields.php:3
-msgid "Contract Name"
-msgstr "ຊື່ສັນຍາ"
-
-#: odm_agreement/i18n/metadata_fields.php:4
-msgid "Objective"
-msgstr "ຈຸດປະສົງ"
-
-#: odm_agreement/i18n/metadata_fields.php:5
-msgid "Participating share"
-msgstr "ຫຸ້ນບູລິມະສິດຊະນິດຮ່ວມ"
-
-#: odm_agreement/i18n/metadata_fields.php:6
-msgid "Contracting Parties"
-msgstr "ສັນຍາຜູ້ຖືຮູ້ນ"
-
-#: odm_agreement/i18n/metadata_fields.php:7
-msgid "Concession/License name"
-msgstr "ຊື່ໃບອະນຸຍາດ/ສຳປະທານ"
-
-#: odm_agreement/i18n/metadata_fields.php:8
-msgid "Disclosure Mode"
-msgstr "ຮູບແບບການເປີດເຜີຍຂໍ້ມູນ"
-
-#: odm_agreement/i18n/metadata_fields.php:9
-msgid "LandMatrix deal No."
-msgstr "ເລກທີຂອງການຕົກລົງໃນ LandMatrix"
-
-#: odm_agreement/i18n/metadata_fields.php:10
-msgid "Document reference no."
-msgstr "ເລກອ້າງອີງເອກະສານ"
-
-#: odm_agreement/i18n/metadata_fields.php:11
-msgid "Amendment to agreement"
-msgstr "ການແກ້ໄຂຂໍ້ຕົກລົງ"
-
-#: odm_agreement/i18n/metadata_fields.php:12
-msgid "Short notes of change"
-msgstr "ບັນທຶກຫຍໍ້ກ່ຽວກັບການປ່ຽນແປງ"
-
-#: odm_agreement/i18n/metadata_fields.php:13
-msgid "Signature date"
-msgstr "ວັນທີລົງລາຍເຊັນ"
-
-#: odm_agreement/i18n/metadata_fields.php:14
-#: odm_agreement/i18n/metadata_fields.php:35
-msgid "Related documents"
-msgstr "ເອກະສານທີ່ກ່ຽວຂ້ອງ"
-
-#: odm_agreement/i18n/metadata_fields.php:15
-msgid "Links to source"
-msgstr "ລິ່ງໄປຫາແຫ່ຼງຂໍ້ມູນ"
-
-#: odm_agreement/i18n/metadata_fields.php:16
-msgid "Granted area"
-msgstr "ເນື້ອທີ່ອະນຸມັດ"
-
-#: odm_agreement/i18n/metadata_fields.php:17
-msgid "Contract term"
-msgstr "ຂໍ້ກຳນົດຂອງສັນຍາ"
-
-#: odm_agreement/i18n/metadata_fields.php:18
-msgid "Payment for concession fees ($/hectare)"
-msgstr "ການຈ່າຍຄ່າສຳປະທານ ($/ເຮັກຕາ)"
-
-#: odm_agreement/i18n/metadata_fields.php:19
-msgid "Guaranty deposit for contract implementation ($/hectare)"
-msgstr "ຄ່າມັດຈຳສຳລັບການຈັດຕັ້ງປະຕິບັດສັນຍາ  ($/ເຮັກຕາ)"
-
-#: odm_agreement/i18n/metadata_fields.php:20
-msgid "Land use planning (hectare)"
-msgstr "ການວາງແຜນນຳໃຊ້ທີ່ດິນ (ເຮັດຕາ)"
-
-#: odm_agreement/i18n/metadata_fields.php:21
-msgid "Party's obligation in the implementation of the project"
-msgstr "ພັນທະຂອງຄູ່ສັນຍາໃນການຈັດຕັ້ງປະຕິບັດໂຄງການ"
-
-#: odm_agreement/i18n/metadata_fields.php:22
-msgid "Job creation summary"
-msgstr "ສະຫຼຸບການສ້າງວຽກງານ"
-
-#: odm_agreement/i18n/metadata_fields.php:23
-msgid "Number of created jobs"
-msgstr "ຈຳນວນວຽກງານທີ່ສ້າງຂຶ້ນ"
-
-#: odm_agreement/i18n/metadata_fields.php:24
-msgid "Training summary"
-msgstr "ສະຫຼຸບການຝຶກອົບຮົມ"
-
-#: odm_agreement/i18n/metadata_fields.php:25
-msgid "Fund allocation for training"
-msgstr "ການຈັດສັນງົບປະມານເພື່ອຝຶກອົບຮົມ"
-
-#: odm_agreement/i18n/metadata_fields.php:26
-msgid "Environmental protection"
-msgstr "ການປົກປັກຮັກສາສິ່ງແວດລ້ອມ"
-
-#: odm_agreement/i18n/metadata_fields.php:27
-msgid "Socio-cultural protection"
-msgstr "ການປົກປັກຮັກສາວັດທະນະທຳສັງຄົມ"
-
-#: odm_agreement/i18n/metadata_fields.php:28
-msgid "Fiscal duties summary"
-msgstr "ສະຫຼຸບກ່ຽວກັບຄວາມຮັບຜິດຊອບດ້ານການເງິນ"
-
-#: odm_agreement/i18n/metadata_fields.php:29
-#: odm_agreement/i18n/metadata_fields.php:31
-msgid "Total amount of fiscal duties"
-msgstr "ຈຳນວນພາສີອາກອນ"
-
-#: odm_agreement/i18n/metadata_fields.php:30
-msgid "Environmental impact assessment (EIA)"
-msgstr "ການປະເມີນຜົນກະທົບຕໍ່ສິ່ງແວດລ້ອມ (EIA)"
-
-#: odm_agreement/i18n/metadata_fields.php:32
-msgid "Environmental fund summary"
-msgstr "ສະຫຼຸບກ່ຽວກັບກອງທຶນສິ່ງແວດລ້ອມ"
-
-#: odm_agreement/i18n/metadata_fields.php:33
-msgid "Total amount of environmental funds"
-msgstr "ຈຳນວນທຶນສິ່ງແວດລ້ອມ"
-
-#: odm_agreement/i18n/metadata_fields.php:34
-msgid "Suspension and/or revocation or termination"
-msgstr "ການໂຈະ ແລະ/ຫຼື ການຖອນ ຫຼື ການສິ້ນສຸດ"
-
-#: odm_agreement/i18n/metadata_fields.php:36
-msgid "Province(s)"
-msgstr "ແຂວງ"
-
-#: odm_agreement/i18n/metadata_fields.php:37
-msgid "Yes"
-msgstr "ແມ່ນ"
-
-#: odm_agreement/i18n/metadata_fields.php:38
-msgid "No"
-msgstr "ບໍ່ແມ່ນ"
-
-#: odm_agreement/i18n/metadata_fields.php:39
-msgid "Unclear copyright"
-msgstr "ລິຂະສິດບໍຈະແຈ້ງ"
-
-#: odm_agreement/i18n/metadata_fields.php:40
-msgid "To be determined"
-msgstr "ຍັງບໍ່ທັນໄດ້ກຳນົດເທື່ອ"
-
-#: odm_agreement/i18n/metadata_fields.php:41
-msgid "Keywords"
-msgstr "ຄຳສັບທີ່ສຳຄັນ"
-
-#: odm_agreement/i18n/metadata_fields.php:42
-msgid "Date modified"
-msgstr "ວັນທີແກ້ໄຂ"
-
-#: odm_agreement/i18n/metadata_fields.php:43
-msgid "Main title"
-msgstr "ຊື່ຫຼັກ"
-
-#: odm_agreement/i18n/metadata_fields.php:44
-msgid "eg. my-dataset"
-msgstr "ເຊັ່ນ my-dataset"
-
-#: odm_agreement/i18n/metadata_fields.php:45
-msgid "Abstract or summary of book or article"
-msgstr "ບົດສະຫຼຸບຫຍໍ້ ຫຼື ບົດສະຫຼຸບຂອງປຶ້ມ ຫຼື ບົດຄວາມ"
-
-#: odm_agreement/i18n/metadata_fields.php:46
-msgid ""
-"The geographic area that the dataset is relevant to (i.e. Cambodia, Laos)."
-msgstr "ພື້ນທີ່ທາງພູມສາດທີ່ຊຸດຂໍ້ມູນກ່ຽວຂ້ອງ (ເຊັ່ນ ກຳປູເຈຍ, ລາວ)"
-
-#: odm_agreement/i18n/metadata_fields.php:47
-msgid "e.g. economy, mental health, government"
-msgstr "ເຊັ່ນ ເສດຖະກິດ, ສຸຂະພາບຈິດ, ລັດຖະບານ"
-
-#: odm_agreement/i18n/metadata_fields.php:48
-msgid ""
-"Comma separated values with following format: company1, %\n"
-"company2, %\n"
-"company3, %"
-msgstr ""
-"ໝາຍຈຸດເພື່ອແຍກຄ່າຕາມຮູບແບບຕໍ່ໄປນີ້: ບໍລິສັດ1, %\n"
-"ບໍລິສັດ2, %\n"
-"ບໍລິສັດ3, %"
-
-#: odm_agreement/i18n/metadata_fields.php:49
-msgid ""
-"The jurisdictional agency responsible for the enforcing and implementing the"
-" (law) legal document."
-msgstr "ອົງການຕຸລາການມີໜ້າທີ່ຮັບຜິດຊອບໃນການບັງຄັບ ແລະ ຈັດຕັ້ງປະຕິບັດທາງກົດໝາຍ"
-
-#: odm_agreement/i18n/metadata_fields.php:50
-msgid ""
-"The concession or license name, is meant for the name of the license area or"
-" block which is covered by the contract."
-msgstr ""
-"ຊື່ໃບສຳປະທານ ຫຼື ໃບອະນຸຍາດ ໝາຍເຖິງຊື່ຂອງພື້ນທີ່ທີ່ໄດ້ຮັບອະນຸຍາດ ຫຼື "
-"ພື້ນທີ່ທີ່ໄດ້ຮັບການຄຸ້ມຄອງໂດຍສັນຍາ."
-
-#: odm_agreement/i18n/metadata_fields.php:51
-msgid "Unknown default if not listed on the document."
-msgstr "ຖ້າບໍ່ໄດ້ລະບຸໄວ້ໃນເອກະສານ ຈະຖືກໃສ່ວ່າບໍ່ຮູ້ ໂດຍອັດຕະໂນມັດ"
-
-#: odm_agreement/i18n/metadata_fields.php:52
-msgid "Look up land matrix number."
-msgstr "ເບິ່ງເລກ land matrix"
-
-#: odm_agreement/i18n/metadata_fields.php:53
-msgid ""
-"A few sentences describing legal considerations for people who access the "
-"website and/or use its contents."
-msgstr ""
-"ອະທິບາຍ 2-3 ປະໂຫຍກກ່ຽວກັບຂໍ້ພິຈາລະນາທາງດ້ານກົດໝາຍສຳລັບຜູ້ທີ່ເຂົ້າ ແລະ/ຫຼື "
-"ນຳໃຊ້ເນື້ອໃນຂອງເວັບໄຊ"
-
-#: odm_agreement/i18n/metadata_fields.php:54
-msgid "Version of publication"
-msgstr "ສະບັບຂອງສິ່ງພິມ"
-
-#: odm_agreement/i18n/metadata_fields.php:55
-msgid "Language(s) of the dataset, including resources within dataset."
-msgstr "ພາສາຂອງຊຸດຂໍ້ມູນ ລວມທັງແຫຼ່ງຂອງຊຸດຂໍ້ມູນ"
-
-#: odm_agreement/i18n/metadata_fields.php:56
-msgid "Date a new version or update of the dataset was created."
-msgstr "ວັນທີສຳລັບຂໍ້ມູນແບບໃໝ່ ຫຼື ປັບປຸງໃໝ່ຖືກສ້າງຂື້ນ"
-
-#: odm_agreement/i18n/metadata_fields.php:57
-#: odm_agreement/i18n/metadata_fields.php:58
-#: odm_agreement/i18n/metadata_fields.php:61
-msgid "Date a new version or update of the dataset was uploaded."
-msgstr "ວັນທີທີ່ຊຸດຂໍ້ມູນແບບໃໝ່ ຫຼື ປັບປຸງໃໝ່ຖືກອັບໂຫລດ"
-
-#: odm_agreement/i18n/metadata_fields.php:59
-msgid "The province(s) this dataset relates to"
-msgstr "ແຂວງທີ່ຊຸດຂໍ້ມູນກ່ຽວຂ້ອງ"
-
-#: odm_agreement/i18n/metadata_fields.php:60
-msgid ""
-"Information about how up-to-date the metadata is and who is responsible for "
-"maintaining it."
-msgstr "ຂໍ້ມູນກ່ຽວກັບຄວາມທັນສະໄໝຂອງ metadata ແລະ ຜູ້ຮັບຜິດຊອບໃນການຮັກສາ"
-
-#: odm_agreement/i18n/metadata_fields.php:62
-msgid "Only if the document is an amendent or annex"
-msgstr "ພຽງແຕ່ຖ້າຫາກເອກະສານເປັນສະບັບປັບປຸງ ຫຼື ເປັນເອກະສານຊ້ອນທ້າຍ"
-
-#: odm_agreement/i18n/metadata_fields.php:63
-msgid "Official URLs where the document is made available."
-msgstr "ລິ່ງ URL ທີ່ເປັນທາງການທີ່ມີເອກະສານຢູ່"
-
-#: odm_agreement/i18n/metadata_fields.php:64
-msgid ""
-"Contact information for the individual or organization that is responsible "
-"for or most knowledgeable about the dataset. This could be the author of a "
-"report, the contact information for the relevant department of an "
-"organization that produced a report, or the data analyst, mapper or "
-"researcher that produced a dataset or report."
-msgstr ""
-"ຂໍ້ມູນຕິດຕໍ່ຂອງບຸກຄົນ ຫຼື ອົງການຈັດຕັ້ງທີ່ຮັບຜິດຊອບ ຫຼື "
-"ມີຄວາມຮູ້ກ່ຽວກັບຊຸດຂໍ້ມູນນີ້ຫຼາຍທີ່ສຸດ. ອາດຈະເປັນຜູ້ຂຽນຂອງບົດລາຍງານໃດໜຶ່ງ "
-"ຫຼື ຂໍ້ມູນຕິດຕໍ່ຂອງພະແນກ ຫຼື ອົງການຈັດຕັ້ງທີ່ກ່ຽວຂ້ອງທີ່ຂຽນບົດລາຍງານ ຫຼື "
-"ວິເຄາະຂໍ້ມູນ, ຜູ້ສ້າງແຜນທີ່ ຫຼື ນັກຄົ້ນຄວ້າທີ່ສ້າງຊຸດຂໍ້ມູນ ຫຼື ບົດລາຍງານ."
-
-#: odm_agreement/i18n/metadata_fields.php:65
-msgid "in hectares"
-msgstr "ເປັນເຮັດຕາ"
-
-#: odm_agreement/i18n/metadata_fields.php:66
-msgid "Period of time, please specify unit below."
-msgstr "ຊ່ວງເວລາ, ກະລຸນາລະບຸຫົວໜ່ວຍຢູ່ຂ້າງລຸ່ມ."
-
-#: odm_agreement/i18n/metadata_fields.php:67
-msgid ""
-"Comma separated values with following format: Year 1, $5\n"
-"Year 2, $7\n"
-"Year 3, $9"
-msgstr ""
-"ໝາຍຈຸດເພື່ອແຍກຄ່າຕາມຮູບແບບຕໍ່ໄປນີ້: ປີທີ 1, $5\n"
-"ປີທີ 2, $7\n"
-"ປີທີ 3, $9"
-
-#: odm_agreement/i18n/metadata_fields.php:68
-msgid "in USD"
-msgstr "ເປັນໂດລາສະຫະລັດ"
-
-#: odm_agreement/i18n/metadata_fields.php:69
-msgid ""
-"Comma separated values with following format: Year 1, 1000\n"
-"Year 2, 2000\n"
-"Year 3, 3000"
-msgstr ""
-"ໝາຍຈຸດເພື່ອແຍກຄ່າຕາມຮູບແບບຕໍ່ໄປນີ້: ປີທີ 1, 1000\n"
-"ປີທີ 2, 2000\n"
-"ປີທີ 3, 3000"
-
-#: odm_agreement/i18n/metadata_fields.php:70
-msgid "Short summary of the general obligations for the private company"
-msgstr "ສະຫຼຸບຫຍໍ້ກ່ຽວກັບພັນທະທົ່ວໄປສຳລັບບໍລິສັດເອກະຊົນ"
-
-#: odm_agreement/i18n/metadata_fields.php:71
-msgid ""
-"Obligations of the private company in recruiting local people for work, "
-"instead of foreigners."
-msgstr ""
-"ພັນທະຂອງບໍລິສັດເອກະຊົນໃນການຈ້າງແຮງງານທ້ອງຖິ່ນ, ແທນທີ່ຈະຈ້າງແຮງງານຕ່າງປະເທດ."
-
-#: odm_agreement/i18n/metadata_fields.php:72
-msgid "Figures can be mentioned occasionally"
-msgstr "ຮູບສາມາດກ່າວເຖິງໄດ້ເປັນບາງຄັ້ງຄາວ"
-
-#: odm_agreement/i18n/metadata_fields.php:73
-msgid ""
-"Obligations of the private company in recruting local people for work, "
-"instead of foreigners. If there is no technical staff from the local people,"
-" they shall be guided by foreigner technical staff; or financial resource "
-"allocation shall be planed and implemented."
-msgstr ""
-"ພັນທະຂອງບໍລິສັດເອກະຊົນໃນການຈ້າງແຮງງານທ້ອງຖິ່ນ, ແທນທີ່ຈະຈ້າງແຮງງານຕ່າງປະເທດ. "
-"ຖ້າຫາກບໍ່ມີພະນັກງານວິຊາການຈາກແຮງງານທ້ອງຖິ່ນ, "
-"ສາມາດຈ້າງພະນັກງານວິຊາການຕ່າງປະເທດ; ຫຼື ມີການວາງແຜນ ແລະ "
-"ຈັດຕັ້ງປະຕິບັດການຈັດສັນຊັບພະຍາກອນທາງດ້ານການເງິນ.​"
-
-#: odm_agreement/i18n/metadata_fields.php:74
-msgid "in USD/year"
-msgstr "ເປັນໂດລາສະຫະລັດ/ປີ"
-
-#: odm_agreement/i18n/metadata_fields.php:75
-msgid ""
-"The private company has obligations to mitigate the environmental impact of "
-"its project implementation to the maximum. Any logging activities are "
-"banned. Recommendations from the relevant authorities shall be condisered "
-"thoughtly."
-msgstr ""
-"ບໍລິສັດເອກະຊົນ ມີພັນທະໃນການຫຼຸດຜ່ອນຜົນກະທົບຕໍ່ສິ່ງແວດລ້ອມ "
-"ຈາກການຈັດຕັ້ງປະຕິບັດໂຄງການໃຫ້ຫຼາຍທີ່ສຸດ. ຫ້າມມີການຕັດໄມ້ທຸກປະເພດ. "
-"ຄວນພິຈາລະນາຄໍາແນະນໍາ ຈາກອໍານາດການປົກຄອງທີ່ກ່ຽວຂ້ອງຢ່າງຖີ່ຖ້ວນ."
-
-#: odm_agreement/i18n/metadata_fields.php:76
-msgid ""
-"Obligations of the private companies in the relocation and restoration of "
-"the people livelihood, and no harmful activities to the people\"s livelihood"
-" and culture. Eg, the company is taking care on the livehood of the workers "
-"and their familities: residence, hopital, schools (ELCs). The compay shall "
-"not make any harms to the heritage sites, and spiritual areas (mining)."
-msgstr ""
-"ພັນທະຂອງບໍລິສັດເອກະຊົນໃນການຍົກຍ້າຍ ແລະ ຟື້ນຟູຊີວິດການເປັນຢູ່ຂອງປະຊາຊົນ ແລະ "
-"ບໍ່ໃຫ້ມີກິດຈະກຳທີ່ທຳລາຍຊີວິດການເປັນຢູ່ ແລະ ວັດທະນະທຳຂອງປະຊາຊົນ. ຕົວຢ່າງ "
-"ບໍລິສັດເບິ່ງແຍງຊີວິດການເປັນຢູ່ຂອງພະນັກງານ ແລະ ຄອບຄົວຂອງເຂົາເຈົ້າ: "
-"ທີ່ຢູ່ອາໄສ, ໂຮງໝໍ, ໂຮງຮຽນ (ELCs). "
-"ບໍ່ໃຫ້ບໍລິສັດທຳລາຍພື້ນທີ່ສຳຄັນທາງດ້ານມໍລະດົກ ແລະ ພື້ນທີ່ສັກສິດ (ບໍ່ແຮ່)."
-
-#: odm_agreement/i18n/metadata_fields.php:77
-msgid ""
-"The private company has obligations to pay tax to the state. In general, "
-"there is no figure."
-msgstr "ບໍລິສັດເອກະຊົນມີພັນທະໃນການຈ່າຍພາສີໃຫ້ລັດ. ໂດຍທົ່ວໄປ ແມ່ນບໍ່ມີຕົວເລກ."
-
-#: odm_agreement/i18n/metadata_fields.php:78
-msgid ""
-"Company\"s obligations to comply with planning for mining feasibility and "
-"restoration planning (of the nature, especially land in the area). In some "
-"case, if it is mentioned, EIA with a particular date may be left here."
-msgstr ""
-"ພັນທະຂອງບໍລິສັດທີ່ຕ້ອງປະຕິບັດຕາມແຜນການສຳລັບການສຶກສາຄວາມເປັນໄປໄດ້ຂອງຂະແໜງບໍ່ແຮ່"
-" ແລະ ແຜນການຟື້ນຟູ (ທຳມະຊາດ, ໂດຍສະເພາະດິນຢູ່ພື້ນທີ່ນັ້ນ). ໃນບາງກໍລະນີ, "
-"ຖ້າຫາກກ່າວເຖິງ ການປະເມີນຜົນກະທົບສິ່ງແວດລ້ອມ ທີ່ບົ່ງບອກວັນທີໃດໜຶ່ງ "
-"ອາດຈະລະບຸໄວ້ຢູ່ບ່ອນນີ້. "
-
-#: odm_agreement/i18n/metadata_fields.php:79
-msgid ""
-"Activities of the area and nature/environment preservation and restoration, "
-"and how funding is managed and spent."
-msgstr ""
-"ກິດຈະກຳຕ່າງໆທີ່ຢູ່ພື້ນທີ່ນັ້ນ ແລະ ການປົກປັກຮັກສາທຳມະຊາດ/ສິ່ງແວດລ້ອມ ແລະ "
-"ການຟື້ນຟູ, ແລະ ການຄຸ້ມຄອງທຶນ ແລະ ການໃຊ້ຈ່າຍ."
-
-#: odm_agreement/i18n/metadata_fields.php:80
-msgid ""
-"Suspension and/or revocation of the mining licenses when certain conditions "
-"are met. Termination of the contract (ELCs) may take place on a part of or "
-"the entire project upon the agreement of the party or the sole previledge of"
-" the state."
-msgstr ""
-"ການໂຈະ ແລະ/ຫຼື ຍົກເລີກໃບອະນຸຍາດຂຸດຄົ້ນບໍ່ແຮ່ ເມື່ອຄົບຕາມເງື່ອນໄຂທີ່ກຳນົດໄວ້."
-" ການສິ້ນສຸດສັນຍາ (ELCs) ອາດຈະເກີດຂຶ້ນໃນສ່ວນໜຶ່ງ ຫຼື ທັງໝົດຂອງໂຄງການ "
-"ຕາມຂໍ້ຕົກລົງຂອງຄູ່ສັນຍາ ຫຼື ຂອງລັດພຽງຝ່າຍດຽວ. "
-
-#: odm_agreement/i18n/metadata_fields.php:81
-msgid ""
-"Link to Profile map ID for map or concession coordinates. eg. "
-"https://opendevelopmentcambodia.net/profiles/economic-land-"
-"concessions/?feature_id=elc_gdc_10"
-msgstr ""
-"ລິ້ງເພື່ອໄປຫາເລກແຜນທີ່ຂໍ້ມູນລວມສຳລັບແຜນທີ່ ຫຼື ຈຸດພິກັດຂອງພື້ນທີ່ສຳປະທານ. "
-"ຕົວຢ່າງ: https://opendevelopmentcambodia.net/profiles/economic-land-"
-"concessions/?feature_id=elc_gdc_10"
-
-#: odm_agreement/i18n/metadata_fields.php:82
-msgid "e.g Tong_Min_Group_Engineering__21.06.2011.pdf"
-msgstr "ຕົວຢ່າງ: Tong_Min_Group_Engineering__21.06.2011.pdf"
-
-#: odm_agreement/i18n/metadata_fields.php:83
-msgid "eg. January 2011 Gold Prices"
-msgstr "ຕົວຢ່າງ: ລາຄາຄຳເດືອນມັງກອນ 2011"
-
-#: odm_agreement/i18n/metadata_fields.php:84
-msgid "Some useful notes about the data"
-msgstr "ບົດບັນທຶກທີ່ເປັນປະໂຫຍດກ່ຽວກັບຂໍ້ມູນ"
-
-#: odm_agreement/i18n/metadata_fields.php:85
-msgid "Language(s) of the resource."
-msgstr "ພາສາຂອງແຫຼ່ງຂໍ້ມູນ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:3
-msgid "Contract"
-msgstr "ສັນຍາ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:4
-msgid "Contract Amendment"
-msgstr "ການແກ້ໄຂສັນຍາ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:5
-msgid "Contract Annex"
-msgstr "ເອກະສານອ້າງອີງຂອງສັນຍາ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:6
-msgid "Contract Farming Agreement"
-msgstr "ຂໍ້ຕົກລົງສັນຍາແບບມີສ່ວນຮ່ວມນຳປະຊາຊົນ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:7
-msgid "Energy Contract"
-msgstr "ສັນຍາພະລັງງານ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:8
-msgid "Exploration Permit/License"
-msgstr "ໃບອະນຸຍາດສຳຫຼວດ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:9
-msgid "Exploitation/extraction permit or license"
-msgstr "ໃບອະນຸຍາດສຳຫຼວດ/ຂຸດຄົ້ນ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:10
-msgid "Forest Concession Contract"
-msgstr "ສັນຍາສຳປະທານປ່າໄມ້"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:11
-msgid "In-land Fishcatchment Concession Contract"
-msgstr "ສັນຍາສຳປະທານການລ້ຽງປານໍ້າຈືດ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:12
-msgid "Infrastructure Contract"
-msgstr "ສັນຍາພື້ນຖານໂຄງລ່າງ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:13
-msgid "Investment Promotion Agreement"
-msgstr "ຂໍ້ຕົກລົງສົ່ງເສີມການລົງທຶນ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:14
-msgid "Joint Venture Agreement"
-msgstr "ຂໍ້ຕົກລົງການລົງທຶນແບບຮູ້ນສ່ວນ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:15
-msgid "Land Concession Contract"
-msgstr "ສັນຍາສຳປະທານທີ່ດິນ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:16
-msgid "Memorandum of Understanding"
-msgstr "ບົດບັນທຶກຄວາມເຂົ້າໃຈ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:17
-msgid "Maritime Fishcatchment Concession Contract"
-msgstr "ສັນຍາສຳປະທານການລ້ຽງປານໍ້າເຄັມ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:18
-msgid "Other long-term leasing contract of State Assets "
-msgstr "ສັນຍາເຊົ່າຊັບສິນຂອງລັດໄລຍະຍາວອື່ນໆ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:19
-msgid "Production or Profit Sharing Agreement"
-msgstr "ຂໍ້ຕົກລົງການແບ່ງກຳໄລ ແລະ ຜົນຜະລິດ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:20
-msgid "Service Contract"
-msgstr "ສັນຍາການວ່າຈ້າງ"
-
-#: odm_agreement/i18n/odm_agreement_document_type.php:21
-msgid "Social Land Concession"
-msgstr "ການສຳປະທານທີ່ດິນເພື່ອສັງຄົມ"
-
-#: odm_agreement/templates/header.html:5
-#: odm_agreement/templates/package/read_base.html:15
-#: odm_agreement/templates/package/snippets/new_package_breadcrumb.html:4
-msgid "Agreement"
-msgstr "ຂໍ້ຕົກລົງ"
-
-#: odm_agreement/templates/package/base.html:5
-#: odm_agreement/templates/package/base.html:15
-#: odm_agreement/templates/package/base.html:18
-#: odm_agreement/templates/package/search.html:5
-#: odm_agreement/templates/package/search.html:13
+#: ckanext/odm_agreement/templates/header.html:5
+#: ckanext/odm_agreement/templates/package/base.html:5
+#: ckanext/odm_agreement/templates/package/base.html:15
+#: ckanext/odm_agreement/templates/package/base.html:18
+#: ckanext/odm_agreement/templates/package/search.html:5
+#: ckanext/odm_agreement/templates/package/search.html:13
 msgid "Agreements"
 msgstr "ຂໍ້ຕົກລົງ"
 
-#: odm_agreement/templates/package/base.html:19
-#: odm_agreement/templates/package/new.html:5
-#: odm_agreement/templates/package/snippets/new_package_breadcrumb.html:5
-#: odm_agreement/templates/package/snippets/stages.html:7
-#: odm_agreement/templates/package/snippets/stages.html:9
+#: ckanext/odm_agreement/templates/package/base.html:19
+#: ckanext/odm_agreement/templates/package/new.html:5
+#: ckanext/odm_agreement/templates/package/snippets/new_package_breadcrumb.html:5
+#: ckanext/odm_agreement/templates/package/snippets/stages.html:7
+#: ckanext/odm_agreement/templates/package/snippets/stages.html:9
 msgid "Create agreement"
 msgstr "ສ້າງຂໍ້ຕົກລົງ"
 
-#: odm_agreement/templates/package/base_form_page.html:7
+#: ckanext/odm_agreement/templates/package/base_form_page.html:7
 msgid "What are Agreements?"
-msgstr "ຂໍ້ຕົກລົງຫຍັງ?"
+msgstr "ຂໍ້ຕົກລົງແມ່ນຫຍັງ?"
 
-#: odm_agreement/templates/package/edit_base.html:5
+#: ckanext/odm_agreement/templates/package/base_form_page.html:10
+msgid ""
+" Agreements provide metadata needed to help users find the documents most "
+"appropriate to their needs. Certain fields on this form are mandatory. Your "
+"agreement cannot be uploaded without providing information in those fields. "
+"Please provide as much information as possible, even when fields are not "
+"mandatory. If you need more guidance on how to do this please see <a "
+"href=\"https://wiki.opendevelopmentmekong.net/metadata\" "
+"target=\"_blank\">WIKI</a>. Once you have completed the form, plse check to "
+"make sure it is accurate and complete. Your recommended agreement item will "
+"be made available to the public once your agreement has been vetted. "
+msgstr ""
+"ຂໍ້ມູນຂໍ້ຕົກລົງ ມີລາຍລະອຽດຂໍ້ມູນທີ່ຈຳເປັນ "
+"ເພື່ອຊ່ວຍໃຫ້ຜູ້ໃຊ້ສາມາດຄົ້ນຫາເອກະສານທີ່ແທດເໝາະກັບຄວາມຕ້ອງການນຳໃຊ້ຂອງຕົນ. "
+"ບາງປ່ອງລາຍລະອຽດໃນແບບຟອມນີ້ ແມ່ນຂໍ້ມູນທີ່ຈຳເປັນສຳລັບລະບົບ. "
+"ທ່ານບໍ່ສາມາດອັບໂຫຼດຂໍ້ຕົກລົງຂອງທ່ານໄດ້ "
+"ຖ້າບໍ່ຕື່ມຂໍ້ມູນໃສ່ປ່ອງເຫຼົ່ານີ້ໃຫ້ຄົບຖ້ວນ. "
+"ກະລຸນາຕື່ມຂໍ້ມູນລາຍລະອຽດໃຫ້ຫຼາຍທີ່ສຸດ "
+"ເຖິງຈະບໍ່ແມ່ນຂໍ້ມູນລາຍລະອຽດທີ່ຈຳເປັນສຳລັບລະບົບ. "
+"ຖ້າທ່ານຕ້ອງການຄຳແນະນຳເພີ່ມເຕີມກ່ຽວກັບວິທີການຕື່ມຂໍ້ມູນ ກະລຸນາໄປເບິ່ງທີ່ໜ້າ "
+"<a href=\"https://wiki.opendevelopmentmekong.net/metadata\" "
+"target=\"_blank\">WIKI</a>. ເມື່ອສຳເລັດການຕື່ມແບບຟອມແລ້ວ "
+"ກະລຸນາກວດສອບວ່າຂໍ້ມູນທຸກຢ່າງຖືກຕ້ອງ ແລະ ຄົບຖ້ວນ. "
+"ຂໍ້ມູນຂໍ້ຕົກລົງທີ່ທ່ານອັບໂຫຼດ "
+"ຈະໄດ້ຮັບການເຜີຍແຜ່ທາງອອນໄລທັນທີທີ່ໄດ້ຜ່ານການກວດສອບແລ້ວ."
+
+#: ckanext/odm_agreement/templates/package/edit_base.html:5
 msgid "View agreement"
 msgstr "ເບີ່ງຂໍ້ຕົກລົງ"
 
-#: odm_agreement/templates/package/new_package_form.html:8
+#: ckanext/odm_agreement/templates/package/new_package_form.html:8
 msgid "Update agreement"
 msgstr "ປັບປຸງຂໍ້ຕົກລົງ"
 
-#: odm_agreement/templates/package/read_base.html:6
+#: ckanext/odm_agreement/templates/package/read_base.html:7
 msgid "Manage"
-msgstr "ຄຸ້ມຄອງ"
+msgstr "ການຈັດການ"
 
-#: odm_agreement/templates/package/read_base.html:16
+#: ckanext/odm_agreement/templates/package/read_base.html:17
+#: ckanext/odm_agreement/templates/package/snippets/new_package_breadcrumb.html:4
+msgid "Agreement"
+msgstr "ຂໍ້ຕົກລົງ"
+
+#: ckanext/odm_agreement/templates/package/read_base.html:18
 msgid "Activity Stream"
-msgstr "ກະແສກິດຈະກຳ"
+msgstr "ລາຍການເຄື່ອນໄຫວ"
 
-#: odm_agreement/templates/package/read_base.html:29
-msgid "Record metadata not complete!!"
-msgstr "ບັນທຶກລາຍການ  metadata  ຍັງບໍ່ສົມບູນ!!"
-
-#: odm_agreement/templates/package/read_base.html:31
-msgid "This agreement is missing some mandatory fields, please complete:"
-msgstr "ຂໍ້ຕົກລົງນີ້ຍັງຂາດຂໍ້ມູນທີ່ຈຳເປັນ, ກະລຸນາເຕື່ມໃຫ້ຄົບຖ້ວນ:"
-
-#: odm_agreement/templates/package/search.html:23
+#: ckanext/odm_agreement/templates/package/search.html:23
 msgid "Add agreement"
 msgstr "ເພີ່ມຂໍ້ຕົກລົງ"
 
-#: odm_agreement/templates/package/snippets/package_form.html:5
+#: ckanext/odm_agreement/templates/package/snippets/package_form.html:5
 msgid "Are you sure you want to delete this dataset?"
-msgstr "ທ່ານແນ່ໃຈບໍ່ທີ່ຈະລົບຊຸດຂໍ້ມູນນີ້?"
+msgstr "ທ່ານຕ້ອງການທີ່ຈະລົບລ້າງຊຸດຂໍ້ມູນນີ້ ຫຼືບໍ່?"
 
-#: odm_agreement/templates/package/snippets/package_form.html:6
+#: ckanext/odm_agreement/templates/package/snippets/package_form.html:6
 msgid "Delete"
-msgstr "ລຶບ"
+msgstr "ລົບລ້າງ"
 
-#: odm_agreement/templates/package/snippets/search_form.html:4
-#: odm_agreement/templates/snippets/search_form.html:6
+#: ckanext/odm_agreement/templates/package/snippets/search_form.html:4
+#: ckanext/odm_agreement/templates/snippets/search_form.html:5
 msgid "Search agreements..."
 msgstr "ຄົ້ນຫາຂໍ້ຕົກລົງ"
 
-#: odm_agreement/templates/package/snippets/stages.html:14
-#: odm_agreement/templates/package/snippets/stages.html:18
-#: odm_agreement/templates/package/snippets/stages.html:20
+#: ckanext/odm_agreement/templates/package/snippets/stages.html:14
+#: ckanext/odm_agreement/templates/package/snippets/stages.html:18
+#: ckanext/odm_agreement/templates/package/snippets/stages.html:20
 msgid "Add data"
 msgstr "ເພີ່ມຂໍ້ມູນ"
-
-#: odm_agreement/templates/snippets/search_form.html:12
-msgid "Submit"
-msgstr "ສົ່ງ"
