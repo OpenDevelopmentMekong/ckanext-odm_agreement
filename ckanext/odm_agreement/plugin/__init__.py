@@ -5,8 +5,7 @@ import ckan.plugins.toolkit as toolkit
 from beaker.middleware import SessionMiddleware
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
-import odm_agreement_helper
+from ckanext.odm_agreement.lib import odm_agreement_helper
 from urlparse import urlparse
 from ckan.common import config
 import json
@@ -16,13 +15,21 @@ import ckan.lib.helpers as h
 
 log = logging.getLogger(__name__)
 
-class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
+
+try:
+    toolkit.requires_ckan_version("2.9")
+except CkanVersionException:
+    from ckanext.odm_agreement.plugin.pylons_plugin import OdmAgreementMixinPlugin
+else:
+    from ckanext.odm_agreement.plugin.flask_plugin import OdmAgreementMixinPlugin
+
+
+class OdmAgreementPlugin(OdmAgreementMixinPlugin):
   '''OD Mekong agreement plugin.'''
 
   plugins.implements(plugins.IValidators, inherit=True)
   plugins.implements(plugins.IConfigurer)
   plugins.implements(plugins.ITemplateHelpers)
-  plugins.implements(plugins.IRoutes, inherit=True)
   plugins.implements(plugins.IPackageController, inherit=True)
 
   def __init__(self, *args, **kwargs):
@@ -30,22 +37,6 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     log.debug('OdmAgreementPlugin init')
     wsgi_app = SessionMiddleware(None, None)
     odm_agreement_helper.session = wsgi_app.session
-
-  def before_map(self, m):
-
-    m.connect('odm_agreement_index','/agreement',controller='package',type='agreement',action='search')
-
-    m.connect('odm_agreement_new','/agreement/new',controller='package',type='agreement',action='new')
-
-    m.connect('odm_agreement_new_resource','/agreement/new_resource/{id}',controller='package',type='agreement',action='new_resource')
-
-    m.connect('odm_agreement_read', '/agreement/{id}',controller='package',type='agreement', action='read', ckan_icon='book')
-
-    m.connect('odm_agreement_edit', '/agreement/edit/{id}',controller='package',type='agreement', action='edit')
-
-    m.connect('odm_agreement_delete', '/agreement/delete/{id}',controller='package',type='agreement', action='delete')
-
-    return m
 
   def update_config(self, config):
     '''Update plugin config'''
@@ -71,7 +62,6 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     }
 
   def after_create(self, context, pkg_dict):
-
     dataset_type = context['package'].type if 'package' in context else pkg_dict['type']
 
     if dataset_type == 'agreement':
@@ -81,3 +71,4 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
       if review_system:
         if pkg_dict['type'] == 'agreement':
           odm_agreement_helper.create_default_issue_agreement(pkg_dict)
+
