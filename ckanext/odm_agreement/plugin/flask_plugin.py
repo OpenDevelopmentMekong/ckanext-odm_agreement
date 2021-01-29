@@ -5,6 +5,6 @@ log = logging.getLogger(__name__)
 
 
 class OdmAgreementMixinPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
-  '''OD Mekong agreement plugin.'''
+  '''OD Mekong agreement plugin flask.'''
 
   plugins.implements(plugins.IBlueprint)

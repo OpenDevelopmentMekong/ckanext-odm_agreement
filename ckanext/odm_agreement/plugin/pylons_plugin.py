@@ -5,7 +5,7 @@ log = logging.getLogger(__name__)
 
 
 class OdmAgreementMixinPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
-  '''OD Mekong agreement plugin.'''
+  '''OD Mekong agreement plugin pylons.'''
   plugins.implements(plugins.IRoutes, inherit=True)
 
   def before_map(self, m):
