@@ -1,0 +1,9 @@
+{% ckan_extends %}
+
+{% block content_action %}
+	{% if dataset_type == 'agreement' %}
+		{% link_for _('View agreement'), named_route='agreement.read', id=pkg.name, class_='btn', icon='eye' %}
+	{% else %}
+		{{super()}}
+	{% endif%}
+{% endblock %}

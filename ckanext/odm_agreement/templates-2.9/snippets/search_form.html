@@ -1,0 +1,8 @@
+{% ckan_extends %}
+
+{% block search_input %}
+    {% if c.type == 'agreement' %}
+  	    {% set placeholder = _('Search agreements...') %}
+    {% endif %}
+  	{{super()}}
+{% endblock %}

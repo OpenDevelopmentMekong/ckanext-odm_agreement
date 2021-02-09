@@ -1,0 +1,9 @@
+{% ckan_extends %}
+
+{% block subtitle %}
+	{% if dataset_type == 'agreement' %}
+		{{ _('Create agreement') }}
+	{% else %}
+		{{ super() }}
+	{% endif %}
+{% endblock %}

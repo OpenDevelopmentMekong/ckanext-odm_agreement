@@ -1,0 +1,29 @@
+{% ckan_extends %}
+
+{% block subtitle %}
+	{% if dataset_type == 'agreement' %}
+		{{ _("Agreements") }}
+	{% else %}
+		{{super()}}
+	{% endif %}
+{% endblock %}
+
+{% block breadcrumb_content %}
+	{% if dataset_type == 'agreement' %}
+		<li class="active">{{ h.nav_link(_('Agreements'), named_route='agreement.search', highlight_actions = 'new index') }}</li>
+	{% else %}
+		{{super()}}
+	{% endif %}
+{% endblock %}
+
+{% block page_primary_action %}
+  {% if h.check_access('package_create') %}
+		<div class="page_primary_action">
+			{% if dataset_type == 'agreement' %}
+				{% link_for _('Add agreement'), named_route='agreement.new', class_='btn btn-primary', icon='plus-square' %}
+			{% else %}
+				{{super()}}
+			{% endif %}
+		</div>
+  {% endif %}
+{% endblock %}
