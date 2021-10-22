@@ -474,7 +474,7 @@
                 "vi": "Phi\u00ean b\u1ea3n/ \u1ea4n ph\u1ea9m", 
                 "my": "\u1015\u103c\u1004\u103a\u1006\u1004\u103a\u1001\u103b\u1000\u103a"
             }, 
-            "preset": "version_hidden", 
+            "preset": "version", 
             "validators": "scheming_required unicode package_version_validator", 
             "form_placeholder": {
                 "en": "Version of publication", 
