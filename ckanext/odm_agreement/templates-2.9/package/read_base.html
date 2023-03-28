@@ -15,6 +15,7 @@
 {% block content_primary_nav %}
 {% if dataset_type == 'agreement' %}
   {{ h.build_nav_icon('agreement.read', _('Agreement'), id=pkg.name) }}
+  {{ h.build_nav_icon('agreement.groups', _('Groups'), id=pkg.name) }}
   {{ h.build_nav_icon('agreement.activity', _('Activity Stream'), id=pkg.name) }}
 {% else %}
   {{super()}}
