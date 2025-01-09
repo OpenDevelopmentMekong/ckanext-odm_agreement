@@ -4,7 +4,7 @@
     {% if dataset_type == 'agreement' %}
         {% if h.check_access('package_update', {'id':pkg.id }) %}
             <div class="actions">
-                {% link_for _('Manage'), controller='package', type='agreement', action='edit', id=pkg.name, class_='btn', icon='wrench' %}
+                {% link_for _('Manage'), named_route='agreement.edit', id=pkg.name, class_='btn', icon='wrench' %}
             </div>
         {% endif%}
     {% else %}
@@ -14,9 +14,9 @@
 
 {% block content_primary_nav %}
 {% if dataset_type == 'agreement' %}
-  {{ h.build_nav_icon('odm_agreement_read', _('Agreement'), id=pkg.name) }}
-  {{ h.build_nav_icon('dataset_groups', _('Groups'), id=pkg.name) }}
-  {{ h.build_nav_icon('dataset_activity', _('Activity Stream'), id=pkg.name) }}
+  {{ h.build_nav_icon('agreement.read', _('Agreement'), id=pkg.name) }}
+  {{ h.build_nav_icon('agreement.groups', _('Groups'), id=pkg.name) }}
+  {{ h.build_nav_icon('agreement.activity', _('Activity Stream'), id=pkg.name) }}
 {% else %}
   {{super()}}
 {% endif%}

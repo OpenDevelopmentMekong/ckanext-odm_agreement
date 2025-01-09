@@ -80,6 +80,3 @@ def generate_ocds_id(key, data, errors, context):
 
 	if (key[:-1] + ("id",)) in data:
 		 data[key] = "ocds-miumsd-" + data[key[:-1] + ("id",)]
-
-
-session = {}

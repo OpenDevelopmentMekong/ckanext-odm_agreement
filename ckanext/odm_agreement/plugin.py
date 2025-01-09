@@ -1,40 +1,26 @@
-import ckan
 import logging
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
-from beaker.middleware import SessionMiddleware
-import sys
-import os
 from ckanext.odm_agreement.lib import odm_agreement_helper
-from urlparse import urlparse
 from ckan.common import config
-import json
-import collections
-from routes.mapper import SubMapper
-import ckan.lib.helpers as h
 
 log = logging.getLogger(__name__)
 
 
-if toolkit.check_ckan_version(min_version='2.9.0'):
-    from ckanext.odm_agreement.plugin.flask_plugin import OdmAgreementMixinPlugin
-else:
-    from ckanext.odm_agreement.plugin.pylons_plugin import OdmAgreementMixinPlugin
-
-
-class OdmAgreementPlugin(OdmAgreementMixinPlugin):
+class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     '''OD Mekong agreement plugin.'''
 
     plugins.implements(plugins.IValidators, inherit=True)
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IPackageController, inherit=True)
+    plugins.implements(plugins.IBlueprint)
 
-    def __init__(self, *args, **kwargs):
+    def update_config(self, config):
+        '''Update plugin config'''
 
-        log.debug('OdmAgreementPlugin init')
-        wsgi_app = SessionMiddleware(None, None)
-        odm_agreement_helper.session = wsgi_app.session
+        toolkit.add_template_directory(config, 'templates')
+        toolkit.add_public_directory(config, 'public')
 
     def get_helpers(self):
         '''Register the plugin's functions above as a template helper function.'''
@@ -63,4 +49,3 @@ class OdmAgreementPlugin(OdmAgreementMixinPlugin):
             if review_system:
                 if pkg_dict['type'] == 'agreement':
                     odm_agreement_helper.create_default_issue_agreement(pkg_dict, context=context)
-

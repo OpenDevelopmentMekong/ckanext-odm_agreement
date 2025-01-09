@@ -11,10 +11,10 @@
 {% block breadcrumb_content %}
 	{% if dataset_type == 'agreement' %}
 		{% if pkg %}
-			<li>{% link_for _('Agreements'), controller='package', type='agreement', action='search' %}</li>
-			<li{{ self.breadcrumb_content_selected() }}>{% link_for h.dataset_display_name(pkg)|truncate(30), controller='package', type='agreement', action='read', id=pkg.name %}</li>
+			<li>{% link_for _('Agreements'), named_route='agreement.search' %}</li>
+			<li{{ self.breadcrumb_content_selected() }}>{% link_for h.dataset_display_name(pkg)|truncate(30), named_route='agreement.read', id=pkg.name %}</li>
 		{% else %}
-			<li>{% link_for _('Agreements'), controller='package', type='agreement', action='search' %}</li>
+			<li>{% link_for _('Agreements'), named_route='agreement.search' %}</li>
 			<li class="active"><a href="">{{ _('Create agreement') }}</a></li>
 		{% endif %}
 	{% else %}
