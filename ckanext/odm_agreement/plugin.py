@@ -14,7 +14,6 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IPackageController, inherit=True)
-    plugins.implements(plugins.IBlueprint)
 
     def update_config(self, config):
         '''Update plugin config'''
@@ -39,7 +38,7 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
           'odm_agreement_generate_ocds_id': odm_agreement_helper.generate_ocds_id
         }
 
-    def after_create(self, context, pkg_dict):
+    def after_dataset_create(self, context, pkg_dict):
         dataset_type = context['package'].type if 'package' in context else pkg_dict['type']
 
         if dataset_type == 'agreement':
@@ -49,3 +48,4 @@ class OdmAgreementPlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm):
             if review_system:
                 if pkg_dict['type'] == 'agreement':
                     odm_agreement_helper.create_default_issue_agreement(pkg_dict, context=context)
+    after_create = after_dataset_create
