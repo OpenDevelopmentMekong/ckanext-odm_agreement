@@ -475,7 +475,7 @@
                 "my": "\u1015\u103c\u1004\u103a\u1006\u1004\u103a\u1001\u103b\u1000\u103a"
             }, 
             "preset": "version", 
-            "validators": "scheming_required unicode package_version_validator", 
+            "validators": "scheming_required unicode_safe package_version_validator", 
             "form_placeholder": {
                 "en": "Version of publication", 
                 "lo": "\u0eaa\u0eb0\u0e9a\u0eb1\u0e9a\u0e82\u0ead\u0e87\u0e81\u0eb2\u0e99\u0e88\u0eb1\u0e94\u0e9e\u0eb4\u0ea1", 
